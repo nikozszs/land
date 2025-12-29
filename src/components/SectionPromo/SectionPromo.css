@@ -28,6 +28,7 @@
 
 .block-promo {
     padding: 15px 25px 0 21px;
+    border-radius: 8px;
 }
 
 .block-promo__under {

@@ -1,6 +1,7 @@
 // import { useState } from 'react'
 import { Header } from './components/Header/Header'
 import { SectionPromo } from './components/SectionPromo/SectionPromo'
+import { SectionTechnology } from './components/SectionTechnology/SectionTechnology'
 import { SectionWithUs } from './components/SectionWithUs/SectionWithUs'
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <SectionPromo />
       <SectionWithUs />
+      <SectionTechnology />
     </>
   )
 }
