@@ -1,0 +1,129 @@
+.section_promo {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 70px;
+    position: relative;
+    z-index: 1
+}
+
+.section_promo::after {
+    content: '';
+    display: block;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: url('../../assets/tel.svg');
+    background-size: 23px 23px;
+    background-repeat: no-repeat;
+    z-index: 2;
+    background-position: center;
+    position: absolute;
+    right: 0px;
+    bottom: -40px;
+    width: 52px;
+    height: 52px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.block-promo {
+    padding: 15px 25px 0 21px;
+}
+
+.block-promo__under {
+    padding: 20px 52px 16px 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+
+.block-promo__under-img {
+    max-width: 64px;
+    min-height: 60px;
+}
+
+.btn-try {
+    background-color: #00E4F0;
+    width: 334px;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.promo-list {
+    padding-left: 15px;
+    margin-bottom: 25px;
+    font-weight: 100;
+}
+
+.promo-list__item {
+    font-size: 18px;
+    line-height: 22.2px;
+    letter-spacing: 0.01em;
+}
+
+.promo-text {
+    font-size: 26px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.promo1 {
+    grid-column: span 7;
+    min-width: 650px;
+    background: linear-gradient(
+        240deg,
+        #FF4C00 5%,
+        #000000 65%
+    );
+    border: 1px solid #FF4C00; 
+}
+
+.promo2 {
+    grid-column: span 5;
+    min-height: 525px;
+    min-width: 563px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.promo3 {
+    grid-column: span 4;
+    background: linear-gradient(
+        240deg,
+        #00E4F0 5%,
+        #000000 65%
+    );
+    border: 1px solid #00E4F0; 
+    min-height: 220px;
+}
+
+.title_promo{
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 300;
+    white-space: wrap;
+}
+
+.text-under {
+    font-size: 12px;
+    letter-spacing: -0.01em;
+    line-height: 14.2px;
+    color: #B0B0B0;
+}
+
+@media (max-width: 767px) {
+    .section_promo {
+        grid-template-columns: 1fr;
+    }
+    .promo1,
+    .promo2,
+    .promo3 {
+        grid-column: span 1;
+    }
+}
