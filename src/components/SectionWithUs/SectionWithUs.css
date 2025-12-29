@@ -2,3 +2,10 @@
     margin-bottom: 61px;
 }
 
+.scroll {
+    margin-left: -36px;
+    margin-right: -36px;
+    display: flex;
+    gap: 20px;
+    padding-top: 38px;
+}   
