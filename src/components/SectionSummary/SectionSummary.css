@@ -1,0 +1,15 @@
+.sectionSummary {
+    margin-bottom: 73px;
+}
+
+.sectionSummary_title {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 20px;
+}
+
+.sectionSummary_img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
