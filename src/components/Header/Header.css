@@ -26,4 +26,5 @@
 }
 .tel {
     padding-top: 27px;
+    white-space: nowrap;
 }

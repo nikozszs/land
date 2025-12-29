@@ -23,7 +23,6 @@
 
 .block_button {
     grid-column: span 5;
-    max-width: 793px;
     background: linear-gradient(
         240deg,
         #FF4C00 5%,

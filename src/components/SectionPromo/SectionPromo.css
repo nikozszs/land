@@ -99,7 +99,7 @@
         #000000 65%
     );
     border: 1px solid #00E4F0; 
-    min-height: 220px;
+    min-height: 160px;
 }
 
 .title_promo{
@@ -108,7 +108,6 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     font-weight: 300;
-    white-space: wrap;
 }
 
 .text-under {

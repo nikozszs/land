@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 import { Header } from './components/Header/Header'
+import { SectionMonitoring } from './components/SectionMonitoring/SectionMonitoring'
 import { SectionPromo } from './components/SectionPromo/SectionPromo'
 import { SectionSummary } from './components/SectionSummary/SectionSummary'
 import { SectionTechnology } from './components/SectionTechnology/SectionTechnology'
@@ -13,6 +14,7 @@ function App() {
       <SectionWithUs />
       <SectionTechnology />
       <SectionSummary />
+      <SectionMonitoring />
     </>
   )
 }
