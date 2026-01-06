@@ -2,6 +2,7 @@
 import { Header } from './components/Header/Header'
 import { SectionMonitoring } from './components/SectionMonitoring/SectionMonitoring'
 import { SectionPromo } from './components/SectionPromo/SectionPromo'
+import { SectionRussia } from './components/SectionRussia/SectionRussia'
 import { SectionScroll } from './components/SectionScroll/SectionScroll'
 import { SectionSolution } from './components/SectionSolution/SectionSolution'
 import { SectionSummary } from './components/SectionSummary/SectionSummary'
@@ -19,6 +20,7 @@ function App() {
       <SectionMonitoring />
       <SectionSolution />
       <SectionScroll />
+      <SectionRussia />
     </>
   )
 }

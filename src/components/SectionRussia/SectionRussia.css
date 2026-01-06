@@ -1,0 +1,91 @@
+.sectionRussia {
+    margin-bottom: 79px;
+}
+
+.block-map {
+    border: 1px solid #FF4C00;
+    box-shadow: 0 0 7px 4px rgba(255, 76, 0, 0.6);
+    width: 1363px;
+    height: 792px;
+    border-radius: 8px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.block-map i {
+    position: absolute;
+    z-index: 2;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 22px;
+    color: #000000;
+    background-color: #00E4F0;
+    font-style: normal;
+    padding: 2px 4px;
+}
+
+.block-map span {
+    font-weight: 500;
+}
+
+.block-map i:nth-child(1) {
+    content: "";
+    top: 196px;
+    left: 180px;
+}
+
+.block-map i:nth-child(2) {
+    content: "";
+    top: 320px;
+    left: 160px;
+}
+
+.block-map i:nth-child(3) {
+    content: "";
+    top: 390px;
+    left: 250px;
+}
+
+.block-map i:nth-child(4) {
+    content: "";
+    top: 442px;
+    left: 350px;
+}
+
+.block-map i:nth-child(5) {
+    content: "";
+    top: 515px;
+    left: 330px;
+}
+
+.block-map i:nth-child(6) {
+    content: "";
+    top: 443px;
+    left: 30px;
+}
+
+.block-map i:nth-child(7) {
+    content: "";
+    bottom: 215px;
+    left: 530px;
+}
+
+.block-map i:nth-child(8) {
+    content: "";
+    bottom: 120px;
+    right: 95px;
+}
+
+.bottomMap {
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    justify-content: center;
+    margin-top: 39px;
+}
+
+.row {
+    display: flex;
+    gap: 7px;
+}
