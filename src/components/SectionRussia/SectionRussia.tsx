@@ -7,49 +7,49 @@ import './SectionRussia.css'
 
 export const SectionRussia = () => {
     const stars = [
-        { id: 1, top: 180, left: 108, src: star },
-        { id: 2, top: 310, left: 125, src: star },
-        { id: 3, top: 415, left: 30, src: star },
-        { id: 4, top: 410, left: -40, src: star },
-        { id: 5, top: 290, left: 80, src: star },
-        { id: 6, top: 360, left: 90, src: star },
-        { id: 7, top: 290, left: 180, src: star },
-        { id: 8, top: 370, left: 170, src: star },
-        { id: 9, top: 310, left: 280, src: star },
-        { id: 10, top: 240, left: 310, src: star },
-        { id: 11, top: 270, left: 370, src: star },
-        { id: 12, top: 370, left: 370, src: star },
-        { id: 13, top: 410, left: 280, src: star },
-        { id: 14, top: 460, left: 260, src: star },
-        { id: 15, top: 330, left: 460, src: star },
-        { id: 16, top: 430, left: 440, src: star },
-        { id: 17, top: 500, left: 460, src: star },
-        { id: 18, top: 400, left: 530, src: star },
-        { id: 19, top: 450, left: 610, src: star },
-        { id: 20, top: 342, left: 623, src: star },
-        { id: 21, top: 240, left: 580, src: star },
-        { id: 22, top: 300, left: 730, src: star },
-        { id: 23, top: 400, left: 740, src: star },
-        { id: 24, top: 330, left: 810, src: star },
-        { id: 25, top: 430, left: 860, src: star },
-        { id: 26, top: 310, left: 920, src: star },
-        { id: 27, top: 260, left: 1010, src: star },
-        { id: 28, top: 200, left: 890, src: star },
-        { id: 29, top: 150, left: 1000, src: star },
-        { id: 30, top: 260, left: 1180, src: star },
-        { id: 31, top: 520, left: 1090, src: star },
-        { id: 32, top: 600, left: 1060, src: star },
+        { id: 1, top: 220, left: 148, src: star },
+        { id: 2, top: 340, left: 165, src: star },
+        { id: 3, top: 445, left: 80, src: star },
+        { id: 4, top: 440, left: 0, src: star },
+        { id: 5, top: 320, left: 120, src: star },
+        { id: 6, top: 390, left: 130, src: star },
+        { id: 7, top: 330, left: 220, src: star },
+        { id: 8, top: 410, left: 210, src: star },
+        { id: 9, top: 340, left: 320, src: star },
+        { id: 10, top: 280, left: 350, src: star },
+        { id: 11, top: 300, left: 410, src: star },
+        { id: 12, top: 400, left: 410, src: star },
+        { id: 13, top: 460, left: 320, src: star },
+        { id: 14, top: 490, left: 300, src: star },
+        { id: 15, top: 370, left: 500, src: star },
+        { id: 16, top: 470, left: 480, src: star },
+        { id: 17, top: 530, left: 500, src: star },
+        { id: 18, top: 440, left: 570, src: star },
+        { id: 19, top: 490, left: 650, src: star },
+        { id: 20, top: 372, left: 663, src: star },
+        { id: 21, top: 270, left: 620, src: star },
+        { id: 22, top: 340, left: 740, src: star },
+        { id: 23, top: 430, left: 780, src: star },
+        { id: 24, top: 370, left: 850, src: star },
+        { id: 25, top: 470, left: 900, src: star },
+        { id: 26, top: 350, left: 960, src: star },
+        { id: 27, top: 300, left: 1050, src: star },
+        { id: 28, top: 240, left: 930, src: star },
+        { id: 29, top: 180, left: 1040, src: star },
+        { id: 30, top: 280, left: 1220, src: star },
+        { id: 31, top: 560, left: 1120, src: star },
+        { id: 32, top: 640, left: 1110, src: star },
     ]
 
     const neons = [
-        { id: 1, top: 244, left: 168, src: neon },
-        { id: 2, top: 368, left: 148, src: neon },
-        { id: 3, top: 438, left: 238, src: neon },
-        { id: 4, top: 490, left: 18, src: neon },
-        { id: 5, top: 502, left: 318, src: neon },
-        { id: 6, top: 489, left: 338, src: neon },
-        { id: 7, top: 577, left: 518, src: neon },
-        { id: 8, top: 672, left: 1121, src: neon },
+        { id: 1, top: 288, left: 208, src: neon },
+        { id: 2, top: 383, left: 188, src: neon },
+        { id: 3, top: 478, left: 263, src: neon },
+        { id: 4, top: 511, left: 58, src: neon },
+        { id: 5, top: 548, left: 358, src: neon },
+        { id: 6, top: 530, left: 378, src: neon },
+        { id: 7, top: 607, left: 558, src: neon },
+        { id: 8, top: 702, left: 1170, src: neon },
     ]
 
     return (
@@ -90,7 +90,7 @@ export const SectionRussia = () => {
                     }}
                     />
                 ))}
-                <img src={mapRussia} />
+                <img src={mapRussia} className='block_map-img' />
             </div>
             <div className='bottomMap'>
                 <div className='row'>
