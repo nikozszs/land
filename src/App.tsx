@@ -1,4 +1,5 @@
 // import { useState } from 'react'
+import { Footer } from './components/Footer/Footer'
 import { Header } from './components/Header/Header'
 import { SectionForm } from './components/SectionForm/SectionForm'
 import { SectionMonitoring } from './components/SectionMonitoring/SectionMonitoring'
@@ -23,6 +24,7 @@ function App() {
       <SectionScroll />
       <SectionRussia />
       <SectionForm />
+      <Footer />
     </>
   )
 }
