@@ -1,4 +1,5 @@
 import monitor from '../../assets/monitor.svg'
+import { Button } from '../Button/Button'
 import './SectionMonitoring.css'
 
 export const SectionMonitoring = () => {
@@ -23,7 +24,7 @@ export const SectionMonitoring = () => {
                 <img src={monitor} className='sectionMonitoring_img'/>
             </div>
             <div className='button-container'>
-                <button className='sectionMonitoring_button'>Испытать все возможности</button>
+                <Button text='Испытать все возможности'/>
             </div>
         </section>
     )

@@ -2,6 +2,7 @@ import promo from '../../assets/promo.svg'
 import promo3 from '../../assets/promo3.svg'
 import promo4 from '../../assets/promo4.svg'
 import promo5 from '../../assets/promo5.svg'
+import { Button } from '../Button/Button'
 import './SectionPromo.css'
 
 export const SectionPromo = () => {
@@ -13,7 +14,7 @@ export const SectionPromo = () => {
                     интернет для бизнеса</h1>
                 <p className='promo-text'>от 2 990 рублей* в месяц! <br /> 
                     Установка по любому адресу в РФ!</p>
-                <button className='btn-try'>попробовать</button>
+                <Button text='попробовать'/>
                 <ul className='promo-list'>
                     <li className='promo-list__item'>Мультироутер с технологией суммирования нескольких каналов связи в один </li>
                     <li className='promo-list__item'>Высокая скорость и отказоустойчивость интернет-соединения </li>

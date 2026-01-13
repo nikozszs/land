@@ -1,0 +1,9 @@
+.buttonSecondary {
+    background-color: #00E4F0;
+    color: #000000;
+    text-transform: uppercase;
+    width: 334px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.07em;
+}
