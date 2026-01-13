@@ -1,5 +1,6 @@
 import './SectionSolution.css'
 import solution from '../../assets/solution.svg'
+import { ButtonGradient } from '../ButtonGradient/ButtonGradient'
 
 export const SectionSolution = () => {
     return (
@@ -36,7 +37,7 @@ export const SectionSolution = () => {
                 </div>
             </div>
             <div className='button-container'>
-                <button className='button'>Начать!</button>
+                <ButtonGradient text='Начать!'/>
             </div>
         </section>
     )

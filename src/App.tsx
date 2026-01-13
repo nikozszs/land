@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 import { Header } from './components/Header/Header'
+import { SectionForm } from './components/SectionForm/SectionForm'
 import { SectionMonitoring } from './components/SectionMonitoring/SectionMonitoring'
 import { SectionPromo } from './components/SectionPromo/SectionPromo'
 import { SectionRussia } from './components/SectionRussia/SectionRussia'
@@ -21,6 +22,7 @@ function App() {
       <SectionSolution />
       <SectionScroll />
       <SectionRussia />
+      <SectionForm />
     </>
   )
 }

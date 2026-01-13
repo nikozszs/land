@@ -64,6 +64,16 @@ h3 {
   margin: 0;
 }
 
+h4 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+}
+
 button {
   border-radius: 50px;
   border: 1px solid transparent;

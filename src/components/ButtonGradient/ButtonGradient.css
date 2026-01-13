@@ -1,0 +1,15 @@
+.button-gradient {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    background: linear-gradient(
+        210deg,
+        #FF4C00 0%,
+        #B38BCE 60%,
+        #00E4F0 100%
+    );
+    border: 1px solid transparent;
+    padding: 12px 90px;
+}
