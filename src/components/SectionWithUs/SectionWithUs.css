@@ -8,4 +8,5 @@
     display: flex;
     gap: 20px;
     padding-top: 38px;
+    overflow-x: hidden;
 }   

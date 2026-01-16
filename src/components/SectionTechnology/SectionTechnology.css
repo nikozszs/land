@@ -19,6 +19,8 @@
 
 .sectionTechnology_img {
     grid-column: span 7;
+    width: 100%;
+    overflow: hidden;
 }
 
 .block_button {
@@ -34,14 +36,44 @@
     flex-direction: column;
     justify-content: space-between;
     border-radius: 8px;
+    min-height: 300px;
 }
 
-.sectionTechnology_button {
-    background-color: #00E4F0;
-    color: #000000;
-    text-transform: uppercase;
-    max-width: 334px;
-    font-weight: 600;
-    line-height: 140%;
-    letter-spacing: 0.07em;
+@media (max-width: 1024px) {
+    .block_tech {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .sectionTechnology_img {
+        grid-column: span 1;
+        order: 0;
+    }
+
+    .block_button {
+        grid-column: span 1;
+        order: 1;
+        min-height: auto;
+        gap: 25px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sectionTechnology {
+        margin-bottom: 43px;
+    }
+
+    h2 {
+        display: none;
+    }
+    
+    .block_button {
+        padding: 15px 15px 19px 15px;
+    }
+    
+    .sectionTechnology_text {
+        font-size: 18px;
+        line-height: 22px;
+    }
 }
