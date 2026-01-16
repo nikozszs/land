@@ -1,5 +1,6 @@
 .sectionTechnology {
     margin-bottom: 73px;
+    overflow: hidden;
 }
 
 .block_tech {
@@ -11,10 +12,11 @@
 
 .sectionTechnology_text {
     white-space: wrap;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 30px;
     letter-spacing: 0;
     font-weight: 300;
+    word-wrap: break-word;
 }
 
 .sectionTechnology_img {
@@ -36,10 +38,9 @@
     flex-direction: column;
     justify-content: space-between;
     border-radius: 8px;
-    min-height: 300px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1248px) {
     .block_tech {
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
