@@ -7,14 +7,14 @@ export const SectionMonitoring = () => {
         <section className='sectionMonitoring'>
             <h2>Настраивайте сеть и управляйте всеми <br /> устройствами через единый личный кабинет</h2>
             <div className='block-monitoring'>
-                <div className='sectionMonitoring_monitor'>
+                <div className='sectionMonitoring_monitor block-setting'>
                     <h3>мониторинг</h3>
                     <div className='block_text'>
                         <p className='sectionMonitoring_text'>Графики потребления трафика</p>
                         <p className='sectionMonitoring_text'>Просмотр подключенных к мультироутеру сетевых устройств</p>
                     </div>
                 </div>
-                <div className='sectionMonitoring_setting'>
+                <div className='sectionMonitoring_setting block-setting'>
                     <h3>тонкая настройка</h3>
                     <div className='block_text'>
                         <p className='sectionMonitoring_text'>Настройка тоннелей PPTP, L2TP, GRE, IPIP</p>
