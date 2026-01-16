@@ -1,7 +1,8 @@
 import arrow from '../../assets/arrow.svg'
 import arrowLeft from '../../assets/arrowLeft.svg'
 import arrowRight from '../../assets/arrowRight.svg'
-import navigation from '../../assets/navigation.svg'
+import navigation4 from '../../assets/navigation4.svg'
+import { Navigation } from '../Navigation/Navigation'
 import './SectionScroll.css'
 
 export const SectionScroll = () => {
@@ -36,17 +37,7 @@ export const SectionScroll = () => {
                     <p>Когда бизнес расширяется, особенно важна скорость партнёров и готовность помочь. Когда у провайдера в Великом Новгороде случилась авария, mrnet за несколько часов доставили мультироутер и удаленно настроили соединение в 8 из 12 наших аптек. Удобство подключения, возможность удаленного контроля всех точек из одного кабинета  и реактивная поддержка в telegram — важные преимущества mrnet!</p>
                 </div>
             </div>
-            <div className='navigation'>
-                <button className='button-navigation'>
-                    <img src={arrowLeft} />
-                </button>
-                <button className='button-navigation'>
-                    <img src={navigation} />
-                </button>
-                <button className='button-navigation'>
-                    <img src={arrowRight} />
-                </button>
-            </div>
+            <Navigation dotsCount={3} />
         </section>
     )
 }

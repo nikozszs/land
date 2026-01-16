@@ -1,11 +1,40 @@
+import { useState } from 'react';
 import promo from '../../assets/promo.svg'
 import promo3 from '../../assets/promo3.svg'
 import promo4 from '../../assets/promo4.svg'
 import promo5 from '../../assets/promo5.svg'
 import { Button } from '../Button/Button'
+import { Navigation } from '../Navigation/Navigation'
 import './SectionPromo.css'
 
 export const SectionPromo = () => {
+    const [ currentSlide, setCurrentSlide ] = useState(0)
+
+    const promoBlocks = [
+        {
+            id: 1,
+            className: 'block-promo block-promo__under',
+            img: promo3,
+            title: 'надежный и быстрый интернет, который не падает'
+        },
+        {
+            id: 2,
+            className: 'block-promo block-promo__under',
+            img: promo4,
+            title: 'КОНТРОЛЬ ВСЕЙ СЕТИ ЧЕРЕЗ ГИБКУЮ НАСТРОЙКУ'
+        },
+        {
+            id: 3,
+            className: 'block-promo block-promo__under',
+            img: promo5,
+            title: 'единственный инструмент для масштабирования по всей стране'
+        }
+    ]
+
+    const handleSlideChange = (index: number) => {
+        setCurrentSlide(index)
+    }
+
     return (
         <section className='section_promo'>
             <div className='promo1 block-promo'>
@@ -28,17 +57,32 @@ export const SectionPromo = () => {
             <div className='promo2'>
                 <img src={promo} />
             </div>
-            <div className='promo3 block-promo block-promo__under'>
-                <img src={promo3} className='block-promo__under-img' />
-                <p className='title_promo'>надежный и быстрый интернет, который не падает</p>
+            
+            <div className='desktop-promo-cards'>
+                {promoBlocks.map((block) => (
+                    <div key={block.id} className='promo3 block-promo block-promo__under' >
+                        <img src={block.img} className='block-promo__under-img' />
+                        <p className='title_promo'>{block.title}</p>
+                    </div>
+                ))}
             </div>
-            <div className='promo3 block-promo block-promo__under'>
-                <img className='block-promo__under-img' src={promo4} />
-                <p className='title_promo'>КОНТРОЛЬ ВСЕЙ СЕТИ ЧЕРЕЗ ГИБКУЮ НАСТРОЙКУ</p>
-            </div>
-            <div className='promo3 block-promo block-promo__under'>
-                <img src={promo5} className='block-promo__under-img'/>
-                <p className='title_promo'>единственный инструмент для масштабирования по всей стране</p>
+
+            <div className='mobile-promo-cards'>
+                <div className='promo3-scroll-container'>
+                    <div className='promo3-wrapper'>
+                        <div className={`promo3 ${promoBlocks[currentSlide].className}`}>
+                            <img src={promoBlocks[currentSlide].img} className='block-promo__under-img' />
+                            <p className='title_promo'>{promoBlocks[currentSlide].title}</p>
+                        </div>
+                    </div>
+                </div>
+                <div className='promo-navigation-container'>
+                    <Navigation 
+                        dotsCount={3}
+                        onSlideChange={handleSlideChange}
+                        initialSlide={currentSlide}
+                    />
+                </div>
             </div>
         </section>   
     )

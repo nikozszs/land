@@ -1,5 +1,6 @@
 .sectionScroll {
     overflow: hidden;
+    margin-bottom: 72px;
 }
 
 .link-title {
@@ -63,15 +64,4 @@
 
 .block_text-other {
     color: #00E4F0;
-}
-
-.navigation {
-    margin: 31px 35px 72px 35px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.button-navigation {
-    background-color: transparent;
 }
