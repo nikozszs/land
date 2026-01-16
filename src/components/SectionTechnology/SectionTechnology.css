@@ -8,6 +8,7 @@
     grid-template-columns: repeat(12, 1fr);
     padding-top: 20px;
     gap: 12px;
+    align-items: stretch;
 }
 
 .sectionTechnology_text {
@@ -22,7 +23,7 @@
 .sectionTechnology_img {
     grid-column: span 7;
     width: 100%;
-    overflow: hidden;
+    object-fit: cover;
 }
 
 .block_button {
@@ -38,9 +39,10 @@
     flex-direction: column;
     justify-content: space-between;
     border-radius: 8px;
+    gap: 19px;
 }
 
-@media (max-width: 1248px) {
+@media (max-width: 970px) {
     .block_tech {
         grid-template-columns: repeat(1, 1fr);
         gap: 10px;
@@ -63,10 +65,6 @@
 @media (max-width: 768px) {
     .sectionTechnology {
         margin-bottom: 43px;
-    }
-
-    h2 {
-        display: none;
     }
     
     .block_button {

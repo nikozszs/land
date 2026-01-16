@@ -13,3 +13,66 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
 }
+
+.desktop-version {
+    display: block;
+}
+
+.desktop-version .sectionSummary_title {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 20px;
+    gap: 12px;
+}
+
+.desktop-version .sectionSummary_img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.mobile-version {
+    display: none;
+}
+
+.mobile-version h2 {
+    text-align: left;
+}
+
+.sectionSummary_img img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .sectionSummary {
+        margin-bottom: 60px;
+    }
+
+    .desktop-version {
+        display: none;
+    }
+
+    .mobile-version {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .mobile-train {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mobile-electrotrain {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mobile-version img {
+        min-height: 200px;
+        width: 100%;
+    }
+}

@@ -2,10 +2,10 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 12px;
-    width: 100%;
     margin-bottom: 70px;
     position: relative;
     z-index: 1;
+    align-items: stretch;
 }
 
 .section_promo::after {
