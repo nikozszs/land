@@ -69,21 +69,22 @@ export const SectionSolution = () => {
                     </div>
                 </div>
 
-                <div className='sectionSolution_block mobile-slide text-container'>
-                        {solutionBlocks.map((block, index) =>
-                            <div key={block.id} className={`mobile-slide ${index === currentSlide ? 'active' : 'hidden'}`}>
-                                <h3>{block.title}</h3>
-                                {block.content}
+                <div className='mobile-solution-slides'>
+                    <div className='mobile-solution-container'>
+                        <div className='mobile-solution-wrapper'>
+                            <div className='sectionSolution_block mobile-slide text-container'>
+                                <h3>{solutionBlocks[currentSlide].title}</h3>
+                                {solutionBlocks[currentSlide].content}
                             </div>
-                        )}
-                </div>
-
-                <div className='mobile-navigation-container'>
-                    <Navigation 
-                        dotsCount={3}
-                        onSlideChange={handleSlideChange}
-                        initialSlide={currentSlide}
-                    />
+                        </div>
+                    </div>
+                    <div className='mobile-navigation-container'>
+                        <Navigation 
+                            dotsCount={3}
+                            onSlideChange={handleSlideChange}
+                            initialSlide={currentSlide}
+                        />
+                    </div>
                 </div>
 
                 <div className='solution4'>
