@@ -1,8 +1,48 @@
 import './SectionSolution.css'
 import solution from '../../assets/solution.svg'
 import { ButtonGradient } from '../ButtonGradient/ButtonGradient'
+import { useState } from 'react'
+import { Navigation } from '../Navigation/Navigation'
 
 export const SectionSolution = () => {
+    const [ currentSlide, setCurrentSlide ] = useState(0)
+
+    const handleSlideChange = (index: number) => {
+        setCurrentSlide(index)
+    }
+
+    const solutionBlocks = [
+        {
+            id: 1,
+            title: "Ценим ваше время",
+            content: (
+                <>
+                    <p className='text'>Подключите мультироутер с быстрым интернетом всего за 7 минут. Наши устройства работают по принципу Plug'n'Play (подключи и пользуйся).</p>
+                    <p className='text'>Вы получаете надёжную связь и отсутствие головной боли в виде договоров с разными провайдерами</p>
+                </>
+            )
+        },
+        {
+            id: 2,
+            title: "Безграничные Возможности",
+            content: (
+                <>
+                    <p className='text'>Подберём оборудование для новых точек и оперативно подключим к интернету по любому адресу.</p>
+                    <p className='text'>Всё это — без необходимости заключения дополнительных контрактов</p>
+                </>
+            )
+        },
+        {
+            id: 3,
+            title: "Индивидуальный подход",
+            content: (
+                <>
+                    <p className='text'>Мы всегда идем навстречу клиенту, предлагая оптимальное по стоимости решение.</p>
+                    <p className='text'>Заполните заявку, и в рабочее время мы за 1 час сделаем расчёт</p>
+                </>
+            )
+        }
+    ]
     return (
         <section className='sectionSolution'>
             <h2>Решение, созданное айтишниками <br /> для айтишников</h2>
@@ -28,12 +68,30 @@ export const SectionSolution = () => {
                         <p className='text'>Заполните заявку, и в рабочее время мы за 1 час сделаем расчёт</p>
                     </div>
                 </div>
+
+                <div className='sectionSolution_block mobile-slide text-container'>
+                        {solutionBlocks.map((block, index) =>
+                            <div key={block.id} className={`mobile-slide ${index === currentSlide ? 'active' : 'hidden'}`}>
+                                <h3>{block.title}</h3>
+                                {block.content}
+                            </div>
+                        )}
+                </div>
+
+                <div className='mobile-navigation-container'>
+                    <Navigation 
+                        dotsCount={3}
+                        onSlideChange={handleSlideChange}
+                        initialSlide={currentSlide}
+                    />
+                </div>
+
                 <div className='solution4'>
                     <h2 className='title'>Попробуйте <br /> 14 дней бесплатно</h2>
                     <p className='text text-other'>Развивайте свою инфру с <a className='text link'>mrnet</a>. Без лишних затрат и костылей. Высокоскоростной интернет — удобно, эффективно!</p>
                 </div>
                 <div className='solution5'>
-                    <img src={solution} />
+                    <img src={solution} alt="Роутер"/>
                 </div>
             </div>
             <div className='button-container'>
