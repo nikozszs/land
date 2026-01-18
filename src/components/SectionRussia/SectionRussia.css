@@ -10,6 +10,7 @@
     border-radius: 8px;
     margin-top: 20px;
     position: relative;
+    max-width: 100%;
 }
 
 .block-map i {
@@ -92,4 +93,241 @@
 
 .block_map-img {
     padding: 32px 40px 52px 40px;
+    width: 100%;
+    height: auto;
+}
+
+.map-star {
+    width: 140px;
+    height: 140px;
+}
+
+.map-neon {
+    width: 12px;
+    height: 12px;
+}
+
+.mobile-container-cities {
+    display: none;
+}
+
+.mobile-block-map {
+    display: none;
+}
+
+@media (max-width: 1439px) and (min-width: 1024px) {
+    .block-map {
+        width: 100%;
+        height: auto;
+    }
+
+    .block_map-img {
+        padding: 32px 40px 52px 40px;
+        width: 93%;
+        height: auto;
+    }
+
+    .block-map i {
+        font-size: calc(12px + 0.1vw);
+        padding: 1px 3px;
+    }
+
+    .block-map i:nth-child(1) {
+        top: 30.3%;
+        left: 16.1%;
+    }
+
+    .block-map i:nth-child(2) {
+        top: 42.3%;
+        left: 14.7%;
+    }
+    
+    .block-map i:nth-child(3) {
+        top: 54.3%;
+        left: 20.2%;
+    }
+    
+    .block-map i:nth-child(4) {
+        top: 62.5%;
+        left: 28.6%;
+    }
+    
+    .block-map i:nth-child(5) {
+        top: 70.7%;
+        left: 27.1%;
+    }
+    
+    .block-map i:nth-child(6) {
+        top: 58.5%;
+        left: 5.1%;
+    }
+    
+    .block-map i:nth-child(7) {
+        bottom: 23.4%;
+        left: 41.8%;
+    }
+    
+    .block-map i:nth-child(8) {
+        bottom: 11.5%;
+        right: 4.2%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .map-star {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .map-neon {
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media (max-width: 1023px) {
+    .mobile-map {
+        display: none;
+    }
+
+    .mobile-block-map {
+        min-width: 317.45px;
+    }
+
+    .mobile-container-cities {
+        display: block;
+        margin: 34px 0 41px;
+    }
+
+    ol {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-flow: column;
+        grid-template-rows: repeat(4, auto);
+        gap: 10px;
+        counter-reset: city-counter;
+        list-style: none;
+    }
+
+    .city-item {
+        position: relative;
+        padding-left: 30px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0;
+    }
+
+    .city-item::before {
+        counter-increment: city-counter;
+        content: counter(city-counter);
+        position: absolute;
+        left: 0;
+        top: 2px;
+        background-color: #00E4F0;
+        color: #000000;
+        width: 15px;
+        height: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    .text-map {
+        letter-spacing: 0.07em;
+        line-height: 12px;
+        font-size: calc(13px + 0.4vw);
+        margin-bottom: 25px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    .mobile-block-map {
+        display: block;
+    }
+
+    .desktop-block-map {
+        display: none;
+    }
+
+    .mobile-text-map {
+        font-weight: 400;
+        font-size:calc(16px + 0.1vw);
+        line-height: 19px;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        margin: 22px 0 0 69px;
+        position: relative;
+    }
+
+    .marker-map {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+    }
+
+    .block-map {
+        width: 100%;
+        height: auto;
+        margin: 30px 0px 34px;
+    }
+
+    .block_map-img {
+        padding: 31px 0px 82px 0px;
+    }
+    
+    .mobile-block-map i:nth-child(3) {
+        top: 32%;
+        left: 22%;
+    }
+    
+    .mobile-block-map i:nth-child(4) {
+        top: 28%;
+        left: 27%;
+    }
+    
+    .mobile-block-map i:nth-child(5) {
+        top: 38%;
+        left: 43%;
+    }
+    
+    .mobile-block-map i:nth-child(6) {
+        top: 41%;
+        left: 3%;
+    }
+    
+    .mobile-block-map i:nth-child(7) {
+        bottom: 30%;
+        left: 52%;
+    }
+    
+    .mobile-block-map i:nth-child(8) {
+        bottom: 25%;
+        left: 59%;
+    }
+
+    /* .mobile-block-map i:nth-child(1) {
+        top: 8%;
+        left: 600%; 
+        z-index: 2;
+    }
+    
+    .mobile-block-map i:nth-child(2) {
+        top: 25% !important;
+        left: 400% !important;
+        z-index: 2;
+    } */
+
+    .mobile-block-map i {
+        width: 15px;
+        height: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 14px;
+        padding: 1px 1px;
+    }
 }
