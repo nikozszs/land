@@ -52,6 +52,27 @@
     padding: 13px 29px;
 }
 
+.input-error {
+    border: 1px solid #FF4C00;
+    box-shadow: 0 0 5px rgba(255, 76, 0, 0.3);
+}
+
+.error-message {
+    color: #f62727;
+}
+
+.success-block {
+    padding: 14px 15px 260px 15px;
+}
+
+.success-message {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
 #name {
     margin: 25px 0 16px;
 }
@@ -114,4 +135,27 @@
 
 .checkbox_button-container {
     margin-top: 10px;
+}
+
+@media (max-width: 1024px) and (min-width: 817px) {
+    .block-title {
+        padding: 13px 50px 70px 15px;
+    }
+}
+
+@media (max-width: 816px) {
+    .form__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 9px;
+    }
+
+    .block-title {
+        padding-right: 15px;
+    }
+
+    .checkbox_button-container {
+        margin-top: 60px;
+    }
+
 }
