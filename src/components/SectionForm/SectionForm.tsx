@@ -22,7 +22,7 @@ export const SectionForm = () => {
                 if (formattedValue[0] === '8' || formattedValue[0] === '7') {
                     formattedValue = formattedValue.replace(
                         /^(\d{1})(\d{3})(\d{3})(\d{2})(\d{2})$/,
-                        (match, p1, p2, p3, p4, p5) => `+7 (${p2}) ${p3}-${p4}-${p5}`
+                        (p2, p3, p4, p5) => `+7 (${p2}) ${p3}-${p4}-${p5}`
                     );
                 } else {
                     formattedValue = value;
