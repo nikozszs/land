@@ -142,4 +142,8 @@
     .mobile-footer_img img{
         width: 100%;
     }
+
+    .footer_text-info {
+        margin-top: 11px;
+    }
 }
