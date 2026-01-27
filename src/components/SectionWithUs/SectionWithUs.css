@@ -24,4 +24,8 @@
     .scroll {
         gap: 0px;
     }
+
+    .text-wrap {
+        padding-right: 60px;
+    }
 }

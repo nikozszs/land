@@ -10,7 +10,7 @@ import scroll7 from '../../assets/scroll7.svg'
 export const SectionWithUs = () => {
     return (
         <section className="sectionWithUs">
-            <h2>500+ клиентов уже с нами</h2>
+            <h2 className='text-wrap'>500+ клиентов уже с нами</h2>
             <div className="scroll">
                 <img src={scroll1} />
                 <img src={scroll2} />
