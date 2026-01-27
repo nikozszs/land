@@ -5,7 +5,7 @@ import { Button } from '../Button/Button'
 export const SectionTechnology = () => {
     return (
         <section className='sectionTechnology'>
-            <h2>Технология</h2>
+            <h2 className='h2-none'>Технология</h2>
             <div className='block_tech'>
                 <img src={technology} className='sectionTechnology_img' />
                 <div className='block_button'>

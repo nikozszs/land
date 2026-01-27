@@ -16,7 +16,7 @@
     font-size: 22px;
     line-height: 30px;
     letter-spacing: 0;
-    font-weight: 300;
+    font-weight: 100;
     word-wrap: break-word;
 }
 
@@ -70,10 +70,19 @@
     
     .block_button {
         padding: 15px 15px 19px 15px;
+        gap: 28px;
     }
     
     .sectionTechnology_text {
         font-size: 18px;
         line-height: 22px;
+    }
+
+    .h2-none {
+        display: none;
+    }
+
+    .block_tech {
+        padding-top: 0;
     }
 }

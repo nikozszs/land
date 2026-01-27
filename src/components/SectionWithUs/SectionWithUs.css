@@ -16,4 +16,12 @@
         width: 140px;
         height: 51px;
     }
+
+    .sectionWithUs {
+        margin-bottom: 53px;
+    }
+
+    .scroll {
+        gap: 0px;
+    }
 }
