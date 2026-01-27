@@ -14,6 +14,7 @@ export const SectionScroll = () => {
         {
             id: 1,
             company: "ШОКОЛАДНИЦА",
+            name: 'Чистяков Марк',
             position: "Начальник управления Управление эксплуатации и развития ИТ-сервисов",
             text: "Мы обратились к mrnet, поскольку нам было необходимо обеспечить стабильный сигнал для видеонаблюдения, эквайринга и работы кафе в проблемных точках. Сотрудники компании предложили отличное решение: разделить сигнал на офис и зал, что повысило качество и отказоустойчивость. Сейчас мультироутеры mrnet стали основным интернет-каналом в некоторых точках, а в других локациях mrnet рассматривается в качестве резервного канала для надежности. На наш взгляд, ребята предлагают..."
         },
@@ -35,7 +36,6 @@ export const SectionScroll = () => {
     return (
         <section className='sectionScroll'>
             <h2>95% клиентов выбирают <a className='link-title'>mrnet</a> <br /> после тест-драйва</h2>
-            
             <div className='desktop-scroll-container'>
                 <div className='scroll-container'>
                     {blocks.map((block) => (
@@ -45,11 +45,6 @@ export const SectionScroll = () => {
                                 {block.position && <p className='block_text' dangerouslySetInnerHTML={{ __html: block.position }} />}
                             </div>
                             <p>{block.text}</p>
-                            <div className='arrow'>
-                                <button className='arrow'>
-                                    <img src={arrow} alt="Стрелка" />
-                                </button>
-                            </div>
                         </div>
                     ))}
                 </div>
@@ -63,12 +58,7 @@ export const SectionScroll = () => {
                             <p className='block_text-other block_text'>{blocks[currentSlide].company} <br /> {blocks[currentSlide].name}</p>
                             {blocks[currentSlide].position && <p className='block_text' dangerouslySetInnerHTML={{ __html: blocks[currentSlide].position }} />}
                         </div>
-                        <p>{blocks[currentSlide].text}</p>
-                        <div className='arrow'>
-                            <button className='arrow'>
-                                <img src={arrow} alt="Стрелка" />
-                            </button>
-                        </div>
+                        <p className='current-slide'>{blocks[currentSlide].text}</p>
                     </div>
                 </div>
                 <div className='mobile-navigation-container'>
