@@ -36,7 +36,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-height: 398px;
+    gap: 20px;
 }
 
 .solution5 {
@@ -50,17 +50,24 @@
 }
 
 .title {
-    color: #000000;
     font-weight: 500;
     font-size: 45px;
     line-height: 53px;
     letter-spacing: 0;
+    text-transform: uppercase;
 }
 
 .text {
-    font-weight: 300;
+    font-weight: 100;
     font-size: 18px;
     line-height: 22.2px;
+    letter-spacing: 0;
+}
+
+.text-under {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
     letter-spacing: 0;
 }
 
@@ -80,8 +87,18 @@
 }
 
 .link {
-    font-weight: 500;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0;
+}
+
+.link:active {
+    color: #2a2a2a3f;
+}
+
+.link:hover {
+    color: #2a2a2a3f;
 }
 
 .mobile-navigation-container {
@@ -92,10 +109,23 @@
     display: none;
 }
 
-@media (max-width: 849px) {
+@media (max-width: 864px) {
     .mobile-solution-slides {
         display: block;
         width: 100%;
+    }
+
+    .title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.02;
+    }
+
+    .link {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
     }
     
     .mobile-solution-container {
@@ -110,6 +140,19 @@
         display: none;
     }
 
+    .sectionSolution_block {
+        padding: 15px 15px 10px;
+    }
+
+    .text-under {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .solution4-img {
+        margin-top: 30px;
+    }
+
     .sectionSolution {
         margin-bottom: 43px;
     }
@@ -117,6 +160,7 @@
     .solution4 {
         order: 5;
         gap: 110px;
+        padding: 14px 13px 10px;
     }
 
     .mobile-navigation-container {
@@ -135,15 +179,20 @@
     }
 
     .mobile-slide {
-        display: block;
+        display: flex;
+        gap: 64px;
     }
 }
 
-@media (min-width: 850px) {
+@media (min-width: 865px) {
     .mobile-slide,
     .mobile-solution-slides,
     .mobile-solution-container,
     .mobile-solution-wrapper {
         display: none;
+    }
+
+    .text-break {
+        word-wrap: break-word;
     }
 }
