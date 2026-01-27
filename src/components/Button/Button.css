@@ -6,4 +6,11 @@
     font-weight: 500;
     line-height: 140%;
     letter-spacing: 0.07em;
+    padding: 5px 0;
+}
+
+@media (max-width: 420px) {
+    .buttonSecondary {
+        width: 100%;
+    }
 }

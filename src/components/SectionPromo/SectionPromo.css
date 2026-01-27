@@ -141,7 +141,8 @@
 @media (max-width: 1000px) {
     .section_promo {
         grid-template-columns: repeat(1, 1fr);
-        gap: 10px;
+        row-gap: 10px;
+        column-gap: 0;
     }
 
     .promo1 {
@@ -183,7 +184,7 @@
             #000000 65%
         );
         border: 1px solid #00E4F0; 
-        min-height: 220px;
+        min-height: 200px;
         width: 100%;
     }
 }
@@ -199,5 +200,22 @@
         font-size: 18px;
         line-height: 22px;
         letter-spacing: 0.01em;
+    }
+
+    .mobile-promo-cards .promo3.block-promo__under {
+        padding: 15px 33px 14px 15px;
+    } 
+
+    .block-promo__under-img {
+        max-width: 82px;
+        max-height: 60px;
+    }
+
+    .block-promo {  
+        padding: 11px 15px 20px;
+    }
+
+    .title_promo {
+        font-size: 19px;
     }
 }
