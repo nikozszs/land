@@ -9,4 +9,11 @@
     gap: 20px;
     padding-top: 38px;
     overflow-x: hidden;
-}   
+}
+
+@media (max-width: 768px) {
+    .scroll img {
+        width: 140px;
+        height: 51px;
+    }
+}
