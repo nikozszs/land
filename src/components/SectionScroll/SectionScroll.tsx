@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import arrow from '../../assets/arrow.svg'
 import { Navigation } from '../Navigation/Navigation'
 import './SectionScroll.css'
 
