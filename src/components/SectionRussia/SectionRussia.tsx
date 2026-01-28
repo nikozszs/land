@@ -1,6 +1,6 @@
-import clietns from '@/assets/clietns.svg'
-import mapRussia from '@assets/mapRussia.svg';
-import sqr from '@assets/sqr.svg'
+import clietns from '../../assets/clietns.svg'
+import mapRussia from '../../../public/mapRussia.svg?url'
+import sqr from '../../assets/sqr.svg'
 import './SectionRussia.css'
 import { mobileStars, stars } from '../../data/stars'
 import star from '../../assets/star.svg'
