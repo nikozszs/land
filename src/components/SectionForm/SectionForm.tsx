@@ -10,7 +10,7 @@ export const SectionForm = () => {
         tg: '',
         agree: false,
     })
-    const [ errors, setErrors] = useState<FormErrors>({})
+    const [errors, setErrors] = useState<FormErrors>({})
     const [isSubmitted, setIsSubmitted] = useState(false);
 
     const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {

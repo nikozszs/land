@@ -111,4 +111,12 @@ button {
     line-height: 100%;
     letter-spacing: 0.04em;
   }
+
+  h4 {
+    font-weight: 200;
+    font-size: 21px;
+    line-height: 25px;
+    letter-spacing: 0.04em;
+  }
+
 }

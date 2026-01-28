@@ -154,6 +154,10 @@
         font-size: 12px;
     }
 
+    .sectionRussia {
+        margin-bottom: 41px;
+    }
+
     .text-map {
         letter-spacing: 0.07em;
         line-height: 12px;
@@ -236,6 +240,10 @@
     .map-star {
         width: 70px;
         height: 70px;
+    }
+
+    .mobile-text-map {
+        font-size: 12px;
     }
 }
 
