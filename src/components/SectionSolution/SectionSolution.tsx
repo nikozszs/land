@@ -1,6 +1,6 @@
 import './SectionSolution.css'
 import solution from '../../assets/solution.svg'
-import { ButtonGradient } from '../ButtonGradient/ButtonGradient'
+import { ButtonGradient } from '../ui/ButtonGradient/ButtonGradient'
 import { useState } from 'react'
 import { Navigation } from '../Navigation/Navigation'
 

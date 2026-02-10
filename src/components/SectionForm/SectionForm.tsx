@@ -1,5 +1,5 @@
 import { useState, type ChangeEvent, type FormEvent } from 'react'
-import { ButtonGradient } from '../ButtonGradient/ButtonGradient'
+import { ButtonGradient } from '../ui/ButtonGradient/ButtonGradient'
 import './SectionForm.css'
 import { type FormErrors, type FormData, validateName, validateTelegram, validatePhone } from '../../validation/validationForm'
 

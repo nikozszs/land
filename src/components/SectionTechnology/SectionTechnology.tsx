@@ -1,6 +1,6 @@
 import './SectionTechnology.css'
 import technology from '../../assets/technology.svg'
-import { Button } from '../Button/Button'
+import { Button } from '../ui/Button/Button'
 
 export const SectionTechnology = () => {
     return (

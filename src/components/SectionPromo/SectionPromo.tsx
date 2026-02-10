@@ -3,7 +3,7 @@ import promo from '../../assets/promo.svg'
 import promo3 from '../../assets/promo3.svg'
 import promo4 from '../../assets/promo4.svg'
 import promo5 from '../../assets/promo5.svg'
-import { Button } from '../Button/Button'
+import { Button } from '../ui/Button/Button'
 import { Navigation } from '../Navigation/Navigation'
 import './SectionPromo.css'
 
