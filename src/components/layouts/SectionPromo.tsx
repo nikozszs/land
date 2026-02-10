@@ -2,7 +2,7 @@ import { useState } from 'react';
 import promo3 from '@assets/promo3.svg'
 import promo4 from '@assets/promo4.svg'
 import promo5 from '@assets/promo5.svg'
-import { SectionPromoUI } from '../ui/SectionPromo/SectionPromo';
+import { SectionPromoUI } from '../ui/SectionPromo/SectionPromoUI';
 
 export const SectionPromo = () => {
     const [ currentSlide, setCurrentSlide ] = useState(0)
