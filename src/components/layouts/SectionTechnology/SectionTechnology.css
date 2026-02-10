@@ -22,9 +22,6 @@
 
 .sectionTechnology_img {
     grid-column: span 7;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 8px;
 }
 
 .block_button {

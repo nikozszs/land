@@ -75,7 +75,7 @@
     display: none;
 }
 
-@media (max-width: 1439px) and (min-width: 1024px) {
+@media (min-width: 1024px) {
     .block-map {
         width: 100%;
         height: auto;
@@ -85,6 +85,13 @@
         padding: 32px 40px 52px;
         width: 93%;
         height: auto;
+    }
+
+    .sectionRussia-img {
+        width: 10px;
+        height: 10px;
+        border-radius: 0;
+        margin-top: 3px;
     }
 
     .desktop-block-map i:nth-child(1) { top: 29.5%; left: 15.7%; }

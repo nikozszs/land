@@ -10,7 +10,7 @@ import { getPercentPosition } from '../../../utils/function'
 export const SectionRussia = () => {
     const desktopContainer = { width: 1367, height: 792}
     const mobileContainer = { width: 335, height: 310 };
-        return (
+    return (
         <section className='sectionRussia'>
             <h2>Подключаем к стабильному интернету по всей России</h2>
             <div className='desktop-block-map block-map'>
@@ -79,11 +79,11 @@ export const SectionRussia = () => {
 
             <div className='bottomMap mobile-map'>
                 <div className='row'>
-                    <img src={clietns} />
+                    <img className="sectionRussia-img" src={clietns} />
                     <p>Наши клиенты</p>
                 </div>
                 <div className='row'>
-                    <img src={sqr} />
+                    <img className="sectionRussia-img" src={sqr} />
                     <p>Отделы продаж</p>
                 </div>
             </div>

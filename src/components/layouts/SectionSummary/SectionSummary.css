@@ -39,11 +39,6 @@
     text-align: left;
 }
 
-.sectionSummary_img img {
-    width: 100%;
-    border-radius: 10px;
-}
-
 @media (max-width: 768px) {
     .sectionSummary {
         margin-bottom: 42px;
