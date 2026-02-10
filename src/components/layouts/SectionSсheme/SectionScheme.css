@@ -1,0 +1,79 @@
+.sectionScheme {
+    margin-bottom: 73px;
+}
+
+.sectionScheme-title {
+    line-height: 40px;
+}
+
+.schemeBlock {
+    border: 1px solid #00E4F0;
+    padding: 57px 39px 60px;
+    height: auto;
+    box-shadow: 0 0 7px 4px rgb(46, 236, 246);
+    margin-top: 30px;
+}
+
+.first-part-scheme {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    row-gap: 19px;
+}
+
+.client {
+    grid-row: span 2 ;
+}
+
+.sim-card {
+    grid-row: span 1;
+}
+
+.operators {
+    grid-row: span 1;
+}
+
+.summary {
+    grid-row: span 2;
+}
+
+.wide-text {
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+.small-text {
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+.another-text {
+    margin-bottom: 15px;
+}
+
+.group-border {
+    border: 2px solid #00E4F0;
+    border-bottom: 0;
+    width: 340px;
+    height: 11px;
+    position: relative;
+}
+
+.group-border-small {
+    width: 67px;
+    height: 11px;
+}
+
+.group-border::before {
+    content: '';
+    position: absolute;
+    height: 15px;
+    top: -15px;
+    width: 2px;
+    left: 50%;
+    background-color: #00E4F0;
+}
