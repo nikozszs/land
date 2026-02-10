@@ -1,7 +1,5 @@
-// import { useState } from 'react'
 import type { FC } from 'react'
 import { Footer } from '../components/Footer/Footer'
-import { Header } from '../components/Header/Header'
 import { SectionForm } from '../components/SectionForm/SectionForm'
 import { SectionMonitoring } from '../components/SectionMonitoring/SectionMonitoring'
 import { SectionPromo } from '../components/SectionPromo/SectionPromo'

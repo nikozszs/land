@@ -1,21 +1,14 @@
-import { useState } from 'react'
-import logo from '../../assets/logo.svg'
-import './Header.css'
+import logo from '../../../assets/logo.svg'
+import './HeaderUI.css'
 import { Link, NavLink } from 'react-router-dom'
 
-export const Header = () => {
-    const [isOpen, setIsOpen] = useState(false)
+interface IHeaderUIProps {
+    isOpen: boolean;
+    toggleMenu: () => void;
+    navLinks: Array<{path: string; label: string}>
+}
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen)
-    } 
-
-    const navLinks = [
-        { path: '/technology', label: 'Технологии'},
-        { path: '/platform', label: 'Платформа управления'},
-        { path: '/test-drive', label: 'Тест-драйв'},
-        { path: '/network', label: 'Наша сеть'},
-    ]
+export const HeaderUI = ({isOpen, toggleMenu, navLinks}: IHeaderUIProps) => {
     return (
         <header className='header'>
             <nav className='header__nav'>
