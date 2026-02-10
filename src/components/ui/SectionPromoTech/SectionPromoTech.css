@@ -1,0 +1,45 @@
+.sectionPromoTech {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: repeat(12, 1fr);
+    margin-bottom: 73px;
+}
+
+.sectionPromoTech-img {
+    grid-column: span 5;
+}
+
+.title-sectionPromoTech {
+    line-height: 35px;
+}
+
+.block-sectionPromoBlock {
+    grid-column: span 7;
+    padding-right: 50px;
+}
+
+.text-sectionPromoTech {
+    font-size: 18px;
+    line-height: 22.2px;
+    color: rgba(228, 233, 237, 0.827);
+}
+
+@media (max-width: 1000px) {
+    .sectionPromoTech {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 10px;
+        column-gap: 0;
+        margin-bottom: 43px;
+    }
+
+    .title-sectionPromoTech {
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.05em;
+    }
+
+    .block-setting {
+        gap: 40px;
+        padding-right: 15px;
+    }
+}
