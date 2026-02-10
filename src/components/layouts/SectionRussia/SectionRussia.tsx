@@ -1,11 +1,11 @@
-import clietns from '../../assets/clietns.svg'
-import mapRussia from '../../../public/mapRussia.svg?url'
-import sqr from '../../assets/sqr.svg'
+import clietns from '@assets/clietns.svg'
+import mapRussia from '@public/mapRussia.svg?url'
+import sqr from '@assets/sqr.svg'
 import './SectionRussia.css'
-import { mobileStars, stars } from '../../data/stars'
-import star from '../../assets/star.svg'
-import { neons } from '../../data/neons'
-import { getPercentPosition } from '../../utils/function'
+import star from '@assets/star.svg'
+import { neons } from '../../../data/neons'
+import { mobileStars, stars } from '../../../data/stars'
+import { getPercentPosition } from '../../../utils/function'
 
 export const SectionRussia = () => {
     const desktopContainer = { width: 1367, height: 792}

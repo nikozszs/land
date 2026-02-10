@@ -1,7 +1,7 @@
 import { useState, type ChangeEvent, type FormEvent } from 'react'
-import { ButtonGradient } from '../ui/ButtonGradient/ButtonGradient'
+import { ButtonGradient } from '../../ui/ButtonGradient/ButtonGradient'
 import './SectionForm.css'
-import { type FormErrors, type FormData, validateName, validateTelegram, validatePhone } from '../../validation/validationForm'
+import { type FormErrors, type FormData, validateName, validateTelegram, validatePhone } from '../../../validation/validationForm'
 
 export const SectionForm = () => {
     const [ formData, setFormData ] = useState<FormData>({

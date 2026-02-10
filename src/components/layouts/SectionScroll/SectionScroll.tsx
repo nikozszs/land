@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Navigation } from '../Navigation/Navigation'
+import { Navigation } from '../../Navigation/Navigation'
 import './SectionScroll.css'
 
 export const SectionScroll = () => {

@@ -1,5 +1,5 @@
-import monitor from '../../assets/monitor.svg'
-import { Button } from '../ui/Button/Button'
+import monitor from '../../../assets/monitor.svg'
+import { Button } from '../../ui/Button/Button'
 import './SectionMonitoring.css'
 
 export const SectionMonitoring = () => {

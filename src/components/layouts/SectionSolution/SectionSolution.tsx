@@ -1,8 +1,8 @@
 import './SectionSolution.css'
-import solution from '../../assets/solution.svg'
-import { ButtonGradient } from '../ui/ButtonGradient/ButtonGradient'
+import solution from '@assets/solution.svg'
+import { ButtonGradient } from '../../ui/ButtonGradient/ButtonGradient'
 import { useState } from 'react'
-import { Navigation } from '../Navigation/Navigation'
+import { Navigation } from '../../Navigation/Navigation'
 
 export const SectionSolution = () => {
     const [ currentSlide, setCurrentSlide ] = useState(0)
@@ -91,7 +91,7 @@ export const SectionSolution = () => {
 
                 <div className='solution4'>
                     <p className='title text-other'>Попробуйте <br /> 14 дней бесплатно</p>
-                    <p className='text-under text-other'>Развивайте свою инфру с <a className='link'>mrnet</a>. Без лишних затрат и костылей. Высокоскоростной интернет — удобно, эффективно!</p>
+                    <p className='solution_text-under text-other'>Развивайте свою инфру с <a className='link'>mrnet</a>. Без лишних затрат и костылей. Высокоскоростной интернет — удобно, эффективно!</p>
                 </div>
                 <div className='solution5'>
                     <img src={solution} className='solution4-img' alt="Роутер"/>

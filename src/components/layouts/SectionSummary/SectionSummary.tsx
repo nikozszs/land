@@ -1,6 +1,6 @@
 import './SectionSummary.css'
-import train from '../../assets/train.svg'
-import electroTrain from '../../assets/electroTrain.svg'
+import train from '@assets/train.svg'
+import electroTrain from '@/assets/electroTrain.svg'
 
 export const SectionSummary = () => {
     return (
