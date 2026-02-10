@@ -23,6 +23,22 @@
     text-transform: uppercase;
 }
 
+.header-link {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.header-link:active::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #00E4F0;
+    position: absolute;
+    top: -30%;
+    right: 50%;
+}
+
 .other-color {
     color: #00E4F0;
 }
@@ -50,11 +66,11 @@
 }
 
 .burger-line.active:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 6px);
+    transform: rotate(45deg) translate(5px, 5px);
 }
 
 .burger-line.active:nth-child(2) {
-    transform: rotate(-45deg) translate(4px, -3px);
+    transform: rotate(-45deg) translate(5px, -5px);
 }
 
 .header_logo {
