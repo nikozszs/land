@@ -1,6 +1,7 @@
 import logo from '../../../assets/logo.svg'
 import './HeaderUI.css'
 import { Link, NavLink } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
 interface IHeaderUIProps {
     isOpen: boolean;
@@ -35,7 +36,7 @@ export const HeaderUI = ({isOpen, toggleMenu, navLinks}: IHeaderUIProps) => {
                                 {item.label}
                         </NavLink>
                     ))}
-                    <a className='other-color'>Оставить заявку</a>
+                    <HashLink to="#sectionForm" className='other-color'>Оставить заявку</HashLink>
                 </div>
             </nav>
         </header>

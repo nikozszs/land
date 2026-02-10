@@ -21,7 +21,7 @@ export const SectionFormUI = ({
     onSubmit
 }: SectionFormUIProps) => {
     return (
-        <section className='section_form'>
+        <section id="sectionForm" className='section_form'>
             <div className='form__container'>
                 <div className='block-title'>
                     <p className='text_form'>Хотите узнать больше, рассчитать стоимость или забрать устройство на бесплатный тест?</p>
