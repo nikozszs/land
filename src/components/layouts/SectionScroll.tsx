@@ -1,8 +1,7 @@
-import { useState } from 'react'
-import { Navigation } from '../../Navigation/Navigation'
-import './SectionScroll.css'
+import { useState, type FC } from "react";
+import { SectionScrollUI } from "../ui/SectionScroll/SectionScrollUI";
 
-export const SectionScroll = () => {
+export const SectionScroll: FC = () => {
     const [ currentSlide, setCurrentSlide ] = useState(0)
 
     const handleSlideChange = (index: number) => {
@@ -33,41 +32,6 @@ export const SectionScroll = () => {
         }
     ]
     return (
-        <section className='sectionScroll'>
-            <h2>95% клиентов выбирают <a className='link-title'>mrnet</a> <br /> после тест-драйва</h2>
-            <div className='desktop-scroll-container'>
-                <div className='scroll-container'>
-                    {blocks.map((block) => (
-                        <div className='block' key={block.id}>
-                            <div className='sectionScroll__text-container'>
-                                <p className='block_text-other block_text'>{block.company} <br /> {block.name}</p>
-                                {block.position && <p className='block_text' dangerouslySetInnerHTML={{ __html: block.position }} />}
-                            </div>
-                            <p>{block.text}</p>
-                        </div>
-                    ))}
-                </div>
-                <Navigation dotsCount={3} />
-            </div>
-
-            <div className='mobile-slides-container'>
-                <div className='mobile-slides-wrapper'>
-                    <div className='block mobile-slide'>
-                        <div className='sectionScroll__text-container'>
-                            <p className='block_text-other block_text'>{blocks[currentSlide].company} <br /> {blocks[currentSlide].name}</p>
-                            {blocks[currentSlide].position && <p className='block_text' dangerouslySetInnerHTML={{ __html: blocks[currentSlide].position }} />}
-                        </div>
-                        <p className='current-slide'>{blocks[currentSlide].text}</p>
-                    </div>
-                </div>
-                <div className='mobile-navigation-container'>
-                    <Navigation 
-                        dotsCount={3}
-                        onSlideChange={handleSlideChange}
-                        initialSlide={currentSlide}
-                    />
-                </div>
-            </div>
-        </section>
+        <SectionScrollUI currentSlide={currentSlide} onSlideChange={handleSlideChange} scrollBlocks={blocks}/>
     )
 }

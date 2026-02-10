@@ -1,6 +1,7 @@
 import './SectionTechnology.css'
 import technology from '@assets/technology.svg'
 import { Button } from '../../ui/Button/Button'
+
 export const SectionTechnology = () => {
     return (
         <section className='sectionTechnology'>

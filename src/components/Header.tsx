@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { HeaderUI } from "./components/ui/HeaderUI/HeaderUI"
+import { HeaderUI } from "./ui/HeaderUI/HeaderUI"
 
 const navLinks = [
     { path: '/technology', label: 'Технологии'},
