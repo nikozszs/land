@@ -2,6 +2,7 @@ import './SectionScheme.css'
 import sheme1 from '@assets/sheme1.svg'
 import sheme2 from '@assets/sheme2.svg'
 import vector1 from '@assets/vector1.svg'
+import cardgroup from '@assets/cardgroup.svg'
 
 export const SectionSсheme = () => {
     return (
@@ -29,7 +30,7 @@ export const SectionSсheme = () => {
                 </div>
                 <div className='second-part-scheme'>
                     <div className='scheme1'>
-                        <img src={sheme1} />
+                        <img src={sheme1} className='sheme1-img'/>
                         <p className='second-part-text'>клиентские устройства</p>
                     </div>
                     <div className='scheme2'>
@@ -39,6 +40,37 @@ export const SectionSсheme = () => {
                     <div className='scheme2'>
                         <img className='sheme2-img' src={sheme2} />
                         <p className='second-part-text'>mrnet мультироутер</p>
+                    </div>
+                    <div className='vectors'>
+                        <img className='vector vector2' src={vector1} />
+                        <img className='vector vector3' src={vector1} />
+                        <img className='vector vector4' src={vector1} />
+                        <img className='vector vector5' src={vector1} />
+                    </div>
+                    <div className='sim-cards-group'>
+                        <img className='card' src={cardgroup} />
+                    </div>
+                    <div className='mbit-groups'>
+                        <div className='group-item'>
+                            <p className='mbit-text'>мобильная сеть</p>
+                            <p className='numbers'>20 Мбит/с</p>
+                            <img className='vector' src={vector1} />
+                        </div>
+                        <div className='group-item'>
+                            <p className='mbit-text'>мобильная сеть</p>
+                            <p className='numbers'>15 Мбит/с</p>
+                            <img className='vector' src={vector1} />
+                        </div>
+                        <div className='group-item'>
+                            <p className='mbit-text'>мобильная сеть</p>
+                            <p className='numbers'>5 Мбит/с</p>
+                            <img className='vector' src={vector1} />
+                        </div>
+                        <div className='group-item'>
+                            <p className='mbit-text'>проводная сеть</p>
+                            <p className='numbers'>50 Мбит/с</p>
+                            <img className='vector' src={vector1} />
+                        </div>
                     </div>
                 </div>
             </div>

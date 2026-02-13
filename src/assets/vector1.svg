@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="50" height="10" fill="none" preserveAspectRatio="none"><path fill="#00E4F0" d="m2 5 4-4v8ZM48 5l-4-4v8ZM6 4h38v2H6z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="10" fill="none" preserveAspectRatio="none">
+  <!-- Левый треугольник (3px) -->
+  <path fill="#00E4F0" d="M2 5 L5 1 L5 9 Z" />
+  <!-- Правый треугольник (3px) -->
+  <path fill="#00E4F0" d="M48 5 L45 1 L45 9 Z" />
+  <!-- Центральная линия -->
+  <rect x="5" y="4.5" width="40" height="1" fill="#00E4F0"/>
+</svg>
