@@ -8,7 +8,7 @@
 
 .schemeBlock {
     border: 1px solid #00E4F0;
-    padding: 57px 39px 60px;
+    padding: 57px 25px 60px;
     height: auto;
     box-shadow: 0 0 7px 4px rgb(46, 236, 246);
     margin-top: 30px;
@@ -17,14 +17,16 @@
 .first-part-scheme {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
+    gap: 70px;
     row-gap: 0px;
 }
 
 .second-part-scheme {
     display: grid;
     grid-template-columns: repeat(11, 1fr);
-    gap: 26px;
+    gap: 10px;
+    margin-top: 10px;
+    padding-left: 2px;
 }
 
 .numbers {
@@ -58,30 +60,35 @@
     grid-row: span 2;
 }
 
-.wide-text {
-    font-size: 15px;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 34px;
-}
-
-.second-part-text {
+.text-scheme {
     font-weight: 300;
-    font-size: 14px;
-    line-height: 19.2px;
     letter-spacing: 0;
     text-align: center;
+    margin-bottom: 18px;
 }
 
-.small-text {
+.text-wide {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.text-normal {
+    font-size: 14px;
+    line-height: 19.2px;
+}
+
+.text-small {
     font-size: 10px;
     text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 27px;
 }
 
 .another-text {
-    margin-bottom: 33px;
+    white-space: nowrap;
+    margin-bottom: 14px;
+}
+
+.another-text-operators {
+    margin-bottom: 23px;
 }
 
 .group-border {
@@ -112,6 +119,7 @@
     gap: 11px;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .sheme1-img {
@@ -129,24 +137,20 @@
 .vector {
     width: 100px;
     height: 13px;
+    transform: rotate(var(--rotate, 0deg));
 }
 
-.vector2 {
-    transform: rotate(-28deg);
+.vector-left .vector:not(:first-child):not(:last-child) {
+    padding-left: 10px;
 }
 
-.vector3 {
-    transform: rotate(-13deg);
-    padding-left: 6px;
+.vector-right .vector:not(:first-child):not(:last-child) {
+    padding-right: 10px;
 }
 
-.vector4 {
-    transform: rotate(13deg);
-    padding-left: 6px;
-}
-
-.vector5 {
-    transform: rotate(28deg);
+.vector-right .vector:first-child, 
+.vector-right .vector:last-child {
+    padding-left: 10px;
 }
 
 .sheme2-img {
@@ -176,6 +180,7 @@
     display: flex;
     gap: 30px;
     flex-direction: column;
+    padding: 0 7px;
 }
 
 .mbit-text {
@@ -186,4 +191,18 @@
     display: flex;
     gap: 2px;
     flex-direction: column;
+}
+
+.server {
+    width: 105px;
+    height: 114px;
+}
+
+.server-block {
+    flex-direction: column-reverse;
+}
+
+.global-img {
+    width: 69px;
+    height: 69px;
 }
