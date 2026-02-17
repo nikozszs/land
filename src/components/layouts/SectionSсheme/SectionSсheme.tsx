@@ -7,12 +7,13 @@ import operators from '@assets/operators.svg'
 import cardgroup from '@assets/cardgroup.svg'
 import { Arrow } from '../../ui/Arrow'
 import { network } from '../../../data/network'
+import { SectionMobileSсheme } from '../SectionMobileScheme/SectionMobileScheme'
 
 export const SectionSсheme = () => {
     return (
         <section className="sectionScheme">
             <h2 className='sectionScheme-title'>Схема работы решения <a className='link-title'>mrnet</a></h2>
-            <div className='schemeBlock'>
+            <div className='desktop-scheme schemeBlock'>
                 <div className='first-part-scheme'>
                     <div className='client'>
                         <p className='text-scheme text-wide'>на стороне клиента</p>
@@ -85,6 +86,10 @@ export const SectionSсheme = () => {
                         <p className='text-scheme text-normal'>интернет</p>
                     </div>
                 </div>
+            </div>
+
+            <div className='mobile-scheme'>
+                <SectionMobileSсheme />
             </div>
         </section>
     )

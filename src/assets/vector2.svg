@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="7" fill="none" preserveAspectRatio="none">
+  <!-- Правый треугольник (наконечник) -->
+  <path fill="#00E4F0" d="M0 5 L2 1 L2 9 Z" />
+  <!-- Центральная линия (начинается сразу после треугольника) -->
+  <rect x="2" y="4.5" width="48" height="1" fill="#00E4F0"/>
+</svg>
