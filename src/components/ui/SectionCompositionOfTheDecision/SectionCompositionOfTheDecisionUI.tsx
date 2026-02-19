@@ -24,7 +24,7 @@ export const SectionCompositionOfTheDecisionUI = ({
                 ))}
             </div>
 
-            <div className='mobile-version'>
+            <div className='mobile-verssion'>
                 <div className='mobile-composition-block'>
                     <CompositionBlock block={currentBlock} />
                 </div>
