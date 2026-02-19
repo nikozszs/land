@@ -1,0 +1,126 @@
+.section-compositionOfTheDecision {
+    margin-bottom: 73px;
+}
+
+.sectionComposition-block {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.sectionComposition-block-setting {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(
+        70deg,
+        #00E4F0 1%,
+        #000000 39%
+    );
+    padding: 20px 24px;
+    border: 1px solid #00E4F0;
+    border-radius: 8px;
+}
+
+.first-grid {
+    grid-column: span 3;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.second-grid {
+    grid-column: span 4;
+}
+
+.third-grid {
+    grid-column: span 5;
+}
+
+.sectionComposition-title {
+    padding: 9px 0;
+    line-height: 32px;
+    letter-spacing: 0.09em;
+    overflow-wrap: break-word;
+}
+
+.multirouter-img {
+    object-fit: contain;
+    margin-bottom: 11px;
+}
+
+.block-numeration {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    align-items: center;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 22.2px;
+    letter-spacing: 0.05em;
+}
+
+.numeration {
+    border: 1px solid #fff;
+    border-radius: 50px;
+    background-color: transparent;
+    width: 30px;
+    height: auto;
+    text-align: center;
+    padding: 4px 0;
+}
+
+.numeration-addition {
+    width: 109px;
+    padding: 4px 2px;
+    text-align: center;
+}
+
+.sectionComposition-h4 {
+    color: #00E4F0;
+    line-height: 27px;
+}
+
+.sectionComposition-link {
+    text-decoration: underline;
+}
+
+.sectionComposition-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.mobile-version {
+    display: none;
+}
+
+@media (max-width: 822px) {
+    .desktop-version {
+        display: none;
+    }
+
+    .mobile-version {
+        display: block;
+        margin-top: 30px;
+        min-height: 0;
+    }
+
+    .sectionComposition-h4 {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.05em;
+    }
+
+    .sectionComposition-block-setting {
+        padding: 18px 15px 15px;
+        gap: 10px;
+    }
+
+    .sectionComposition-title {
+        line-height: 25px;
+        letter-spacing: 0.06em;
+    }
+}

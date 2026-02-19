@@ -2,6 +2,7 @@ import type { FC } from "react";
 import { SectionPromoTech } from "../components/ui/SectionPromoTech/SectionPromoTech";
 import { SectionOperatingPrinciple } from "../components/layouts/SectionOperatingPrinciple";
 import { SectionSсheme } from "../components/layouts/SectionSсheme/SectionSсheme";
+import { SectionCompositionOfTheDecision } from "../components/layouts/SectionCompositionOfTheDecision";
 
 export const Technology: FC = () => {
     return (
@@ -9,6 +10,7 @@ export const Technology: FC = () => {
             <SectionPromoTech />
             <SectionOperatingPrinciple />
             <SectionSсheme />
+            <SectionCompositionOfTheDecision />
         </>
     )
 }
