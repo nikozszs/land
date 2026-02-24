@@ -4,6 +4,8 @@ import { SectionOperatingPrinciple } from "../components/layouts/SectionOperatin
 import { SectionSсheme } from "../components/layouts/SectionSсheme/SectionSсheme";
 import { SectionCompositionOfTheDecision } from "../components/layouts/SectionCompositionOfTheDecision";
 import { SectionTechSupportUI } from "../components/ui/SectionTechSupport/SectionTechSupportUI";
+import { SectionForm } from "../components/layouts/SectionForm";
+import { Footer } from "../components/Footer/Footer";
 
 export const Technology: FC = () => {
     return (
@@ -13,6 +15,8 @@ export const Technology: FC = () => {
             <SectionSсheme />
             <SectionCompositionOfTheDecision />
             <SectionTechSupportUI />
+            <SectionForm />
+            <Footer />
         </>
     )
 }
