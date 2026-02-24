@@ -125,17 +125,18 @@
     }
 
     .mbit-text {
-        padding-top: 5px;
         text-align: center;
     }
 
     .numbers {
         padding-bottom: 5px;
+        margin: 0;
     }
 
     .router-cards-group {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         flex-direction: row;
         grid-column: 3/7;
         grid-row: 7/8;
@@ -196,6 +197,118 @@
     }
 }
 
+@media (max-width: 768px) {
+    .numbers {
+        font-size: 10px;
+    }
+
+    .first-part {
+        gap: 13px;
+    }
+
+    .text-wide {
+        font-size: 18px;
+    }
+
+    .schemeBlock {
+        padding: 20px 5px 20px;
+    }
+
+    .router-cards-group {
+        padding: 5px 10px 0;
+    }
+
+    .sim-cards-group {
+        padding: 0 10px;
+    }
+
+    .server {
+        width: 60px;
+        height: 66px;
+    }
+
+    .sheme2-img {
+        width: 60px;
+        height: 47px;
+    }
+    .sheme1-img {
+        width: 160px;
+        height: 59px;
+    }
+
+    .vectors {
+        gap: 6px;
+    }
+
+    .mbit-groups {
+        margin-top: 0;
+        padding: 0;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .global-img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .client, .sim-card, .operators, .summary {
+        grid-column: 1/2;
+    }
+
+    .scheme1, .scheme2, .scheme3, .vectors, .sim-cards-group, .mbit-groups, .router-cards-group, .server-block, .IP, .internet-block {
+        grid-column: 2/7;
+    }
+
+    .numbers-grid {
+        grid-column: 2/3;
+    }
+}
+
+@media (max-width: 495px) {
+    .text-wide {
+        font-size: 13px;
+        padding-right: 4px;
+    }
+
+    .router-cards-group, .sim-cards-group {
+        padding: 0 1px;
+    }
+
+    .server-block, .IP, .internet-block {
+        grid-column: 3/7;
+    }
+
+    .mbit-groups {
+        gap: 2px;
+    }
+
+    .vectors {
+        gap: 1px;
+    }
+
+    .vector {
+        object-fit: none;
+        height: 5px;
+    }
+
+    .mbit-text {
+        font-size: 7px;
+        letter-spacing: 0;
+    }
+
+    .card {
+        width: 30px;
+        height: 53px;
+    }
+
+    .sheme1-img {
+        width: 100px;
+        height: 39px;
+    }
+}
+
+/* 
 .another-text {
     white-space: nowrap;
     margin-bottom: 14px;
@@ -218,4 +331,4 @@
 .global-img {
     width: 69px;
     height: 69px;
-}
+} */

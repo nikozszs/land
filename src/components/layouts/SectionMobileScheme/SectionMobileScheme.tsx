@@ -62,7 +62,6 @@ export const SectionMobileSсheme = () => {
                                 <ArrowSmall rotate={90} /> 
                                 <p className='mbit-text'>{item.text}</p>
                                 <p className='numbers'>{item.speed}</p>
-                                <ArrowSmall rotate={270} /> 
                             </div>
                         ))}
                     </div>
