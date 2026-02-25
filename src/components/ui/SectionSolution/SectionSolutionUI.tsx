@@ -71,7 +71,7 @@ export const SectionSolutionUI = ({solutionBlocks, currentSlide, onSlideChange}:
                 </div>
             </div>
             <div className='button-container'>
-                <ButtonGradient text='Начать!' disabled={false} type={'button'}/>
+                <ButtonGradient text='Начать!' disabled={false} type={'button'} link='#sectionForm'/>
             </div>
         </section>
     )

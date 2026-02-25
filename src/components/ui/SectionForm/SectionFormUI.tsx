@@ -15,7 +15,7 @@ interface SectionFormUIProps {
 export const SectionFormUI = ({
     formData,
     errors,
-    isDisabled,
+    isDisabled = true,
     isSubmitted,
     onInputChange,
     onSubmit

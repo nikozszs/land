@@ -24,7 +24,7 @@ export const SectionMonitoring = () => {
                 <img src={monitor} className='sectionMonitoring_img'/>
             </div>
             <div className='button-container'>
-                <Button text='Испытать все возможности'/>
+                <Button text='Испытать все возможности' link='#sectionForm'/>
             </div>
         </section>
     )
