@@ -10,7 +10,7 @@ export const SectionTechnology = () => {
                 <img src={technology} className='sectionTechnology_img' />
                 <div className='block_button'>
                     <p className='sectionTechnology_text'>Прокачайте свой интернет с высокоскоростными технологиями mrnet. Наш мультироутер суммирует несколько каналов связи в один (технология бондинг), значительно повышая устойчивость и скорость соединения!</p>
-                    <Button text='узнать больше'/>
+                    <Button text='узнать больше' link='/technology' isScroll={true}/>
                 </div>
             </div>
         </section>

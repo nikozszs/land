@@ -29,7 +29,7 @@ export const SectionPromoUI = ({
                     интернет для бизнеса</h1>
                 <p className='promo-text'>от 2 990 рублей* в месяц! <br /> 
                     Установка по любому адресу в РФ!</p>
-                <Button text='попробовать'/>
+                <Button text='попробовать' link='#sectionForm'/>
                 <ul className='promo-list'>
                     <li className='promo-list__item'>Мультироутер с технологией суммирования нескольких каналов связи в один </li>
                     <li className='promo-list__item'>Высокая скорость и отказоустойчивость интернет-соединения </li>

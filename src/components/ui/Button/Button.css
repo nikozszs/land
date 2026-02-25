@@ -1,15 +1,22 @@
 .buttonSecondary {
     background-color: #00E4F0;
-    color: #000000;
     text-transform: uppercase;
     width: 334px;
+    padding: 5px 0;
+    color: #000000;
+}
+
+.buttonSecondary-link {
+    text-decoration: none;
+    color: #000000;
     font-weight: 500;
     line-height: 140%;
     letter-spacing: 0.07em;
-    padding: 5px 0;
+    font-size: 14px;
 }
 
 .buttonSecondary:hover {
+    color: #000000;
     box-shadow: 
         0 0 20px rgba(0, 228, 240, 0.6),
         0 0 40px rgba(0, 228, 240, 0.4),
