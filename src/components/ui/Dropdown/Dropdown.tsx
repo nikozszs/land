@@ -1,6 +1,6 @@
 import { HashLink } from "react-router-hash-link";
 import './Dropdown.css'
-import { Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 
 interface DropdownMenuProps {
@@ -14,18 +14,20 @@ export const DropdownMenu = ({
     navLinks,
     closeMenu
 }: DropdownMenuProps) => {
+    const location = useLocation()
     return (
         <div className={`drop-menu ${isOpen ? 'active' : ''}`} >
             <div className='dropdown-menu__links'>
             {navLinks.map((item) => (
-                <Link 
+                <NavLink 
                     key={item.path}
                     to={item.path}
-                    className="dropdown-link"
+                    className={({ isActive }) => 
+                        `dropdown-link ${isActive ? 'active' : ''}`}
                     onClick={closeMenu}
                     >
                         {item.label}
-                </Link>
+                </NavLink>
                 ))}
                 <HashLink 
                     to="#sectionForm" 

@@ -41,6 +41,18 @@
     text-align: end;
     border-bottom: 1px solid rgba(0, 228, 240, 0.2);
     padding: 20px 0;
+    position: relative;
+}
+
+.dropdown-link.active::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #00E4F0;
+    position: absolute;
+    left: 70%;
+    top: 10px;
+    transform: translateX(-50%);
 }
 
 .dropdown-link:last-child {
