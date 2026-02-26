@@ -41,7 +41,6 @@
 }
 
 .sectionMonitoring_text {
-    font-weight: 300;
     font-size: 18px;
     line-height: 22.2px;
     letter-spacing: 0;
@@ -49,16 +48,6 @@
 
 .sectionMonitoring_text:not(:last-child) {
     padding-bottom: 20px;
-}
-
-.sectionMonitoring_button {
-    background-color: #00E4F0;
-    color: #000000;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 140%;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
 }
 
 .button-container {
