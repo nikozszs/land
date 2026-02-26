@@ -2,29 +2,35 @@ import './SectionSummary.css'
 import train from '@assets/train.svg'
 import electroTrain from '@/assets/electroTrain.svg'
 
+const blocks = [
+    { title: 'не балансируем', img: train, alt: 'поезд'},
+    { title: 'а суммируем', img: electroTrain, alt: 'электропоезд'},
+]
+
 export const SectionSummary = () => {
     return (
         <section className='sectionSummary'>
             <div className='sectionSummary_container'>
                 <div className='desktop-version'>
                     <div className='sectionSummary_title'>
-                        <h2>не балансируем</h2>
-                        <h2>а суммируем</h2>
+                        {blocks.map((item, i) => (
+                            <h2 key={i}>{item.title}</h2>
+                        ))}
                     </div>
                     <div className='sectionSummary_img'>
-                        <img src={train} alt='Поезд' />
-                        <img src={electroTrain} alt='Электропоезд' />
+                        {blocks.map((item, i) => (
+                            <img key={i} src={item.img} alt={item.alt} />
+                        ))}
                     </div>
                 </div>
+
                 <div className='mobile-version'>
-                    <div className='mobile-train'>
-                        <h2>не балансируем</h2>
-                        <img src={train} alt='Поезд' />
-                    </div>
-                    <div className='mobile-electrotrain'>
-                        <h2>а суммируем</h2>
-                        <img src={electroTrain} alt='Электропоезд' />
-                    </div>
+                    {blocks.map((item, i) => (
+                        <div key={i} className={i === 0 ? 'mobile-train' : 'mobile-electrotrain'} >
+                            <h2>{item.title}</h2>
+                            <img src={item.img} alt={item.alt} />
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>
