@@ -54,13 +54,7 @@
         gap: 43px;
     }
 
-    .mobile-train {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .mobile-electrotrain {
+    .mobile-electrotrain .mobile-train {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -70,5 +64,9 @@
         min-height: 200px;
         width: 100%;
         border-radius: 9px;
+    }
+
+    .mobile-version-h2 {
+        margin-top: 20px;
     }
 }

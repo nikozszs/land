@@ -28,7 +28,7 @@ export const SectionSummary = () => {
                     {blocks.map((item, i) => (
                         <div key={i} className={i === 0 ? 'mobile-train' : 'mobile-electrotrain'} >
                             <h2>{item.title}</h2>
-                            <img src={item.img} alt={item.alt} />
+                            <img src={item.img} alt={item.alt} className='mobile-version-h2'/>
                         </div>
                     ))}
                 </div>
