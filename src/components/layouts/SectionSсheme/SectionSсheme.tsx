@@ -1,4 +1,4 @@
-import './SectionScheme.css'
+import './SectionScheme.scss'
 import sheme1 from '@assets/sheme1.svg'
 import sheme2 from '@assets/sheme2.svg'
 import server from '@assets/server.svg'

@@ -176,7 +176,7 @@
     .group-border {
         border-right: 0;
         width: 7px;
-        border-bottom: 2px solid $accent;
+        border-bottom: 2px solid var(--color-primary);
         height: 100%;
 
         &::before {
@@ -184,7 +184,7 @@
             height: 2px;
             top: 50%;
             left: -9px;
-            background-color: $accent;
+            background-color: var(--color-primary);
         }
     }
 
