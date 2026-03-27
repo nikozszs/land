@@ -1,35 +1,36 @@
+@import './styles/variables.scss';
+@import './styles/mixins.scss';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
 
 :root {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-a, p {
-  font-weight: 400;
-  font-size: 12px;
-  letter-spacing: 0.09em;
-  line-height: 140%;
-}
-
-a:hover {
-  color: #00E4F0;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-primary: #00E4F0;
+  --font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 body {
-  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--font-family);
   margin: 0 auto;
   max-width: 1440px;
   min-width: 320px;
   min-height: 100vh;
-  line-height: 100%;
-  color: #FFFFFF;
-  background-color: #000000;
+  color: var(--color-white);
+  background-color: var(--color-black);
   padding: 36px 36px 0 36px;
-  font-weight: 400;
   box-sizing: border-box;
   overflow-x: hidden;
+}
+
+a, p {
+  @include text-style(400, 12px, 140%, 0.09em)
+}
+
+a:hover {
+  color: var(--color-primary);
 }
 
 h1, h2, h3, h4, a, li {
@@ -47,10 +48,7 @@ h2, h3 {
 }
 
 h1 {
-  font-weight: 400;
-  font-size: 50px;
-  line-height: 1.1;
-  letter-spacing: 0.03em;
+  @include text-style(400, 50px, 1.1, 0.03em)
 }
 
 h2 {
@@ -64,10 +62,7 @@ h3 {
 }
 
 h4 {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  letter-spacing: 0.05em;
+  @include text-style(400, 20px, 32px, 0.05em)
 }
 
 img {
@@ -79,10 +74,7 @@ img {
 }
 
 li {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22.2px;
-  letter-spacing: 0;
+  @include text-style(400, 18px, 22.2px, 0 )
 }
 
 button {
@@ -121,9 +113,6 @@ button {
   }
 
   h4 {
-    font-weight: 200;
-    font-size: 21px;
-    line-height: 25px;
-    letter-spacing: 0.04em;
+    @include text-style(200, 21px, 25px, 0.04em)
   }
 }

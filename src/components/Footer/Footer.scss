@@ -1,20 +1,26 @@
 .desktop-footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     gap: 2px;
 }
 
-.footer_address {
+.footer_address,
+.footer_info {
     display: flex;
     flex-direction: column;
-    gap: 70px;
 }
 
-.footer-container_adress {
+.footer_address { gap: $gap-large }
+.footer_info { gap: $gap-medium }
+
+.footer-container_adress,
+.footer-container_info {
     display: flex;
-    gap: 17px;
     flex-direction: column;
 }
+
+.footer-container_adress { gap: $gap-xxxs; }
+.footer-container_info { gap: $gap-xs; }
 
 .footer_logo {
     width: 185px;
@@ -26,19 +32,13 @@
     font-size: 12px;
     line-height: 19.6px;
     letter-spacing: 0.01em;
-    color: #ffffffb9;
+    color: $white-light;
 }
 
 .footer_logo-text {
     letter-spacing: 0.07em;
     text-transform: uppercase;
-    color: #ffffffd2;
-}
-
-.footer_info {
-    display: flex;
-    flex-direction: column;
-    gap: 67px;
+    color: $white-dark;
 }
 
 .footer-link {
@@ -50,25 +50,19 @@
     letter-spacing: 0.01em;
 }
 
-.footer-container_info {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
 .footer_links {
     display: flex;
     flex-direction: column;
-    gap: 31px;
-}
+    gap: $gap-small;
 
-.footer_links a {
-    display: inline-block;
-    font-weight: 200;
-    color: #ffffffb9;
-    text-decoration: underline;
-    line-height: 17.6px;
-    letter-spacing: -0.04em;
+    a {
+        display: inline-block;
+        font-weight: 200;
+        color: $white-light;
+        text-decoration: underline;
+        line-height: 17.6px;
+        letter-spacing: -0.04em;
+    }
 }
 
 .footer_img {
@@ -124,11 +118,14 @@
 
     .footer_links {
         padding-bottom: 30px;
-        gap: 20px;
+        gap: $gap-xxs;
     }
 
-    .footer_links-instructions a, .footer_links-requirements a{
-        display: block;
+    .footer_links-instructions, 
+    .footer_links-requirements {
+        a {
+            display: block;
+        }
     }
 
     .mobile-footer-logo {
