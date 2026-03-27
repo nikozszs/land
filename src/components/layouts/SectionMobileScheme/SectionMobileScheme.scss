@@ -1,48 +1,84 @@
-@media (max-width: 1285px) {
-    .sectionScheme {
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+.sectionScheme {
+    @include tablet-large {
         margin-bottom: 43px;
     }
+}
 
-    .schemeBlock {
+.schemeBlock {
+    @include tablet-large {
         padding: 26px 18px 31px;
     }
+    @include tablet {
+        padding: 20px 5px 20px;
+    }
+}
 
-    .grid-scheme {
+.grid-scheme {
+    @include tablet-large {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: repeat(11, 1fr);
         gap: 0;
     }
+}
 
-    .text-scheme {
+.text-scheme {
+    @include tablet-large {
         margin: 0;
     }
+}
 
-    .text-wide {
+.text-wide {
+    @include tablet-large {
         margin-bottom: 0;
         font-weight: 400;
-        font-size: 24px;
+        font-size: $text-lg;
         text-align: start;
     }
+    @include tablet {
+        font-size: $text-md;
+    }
+    @include mobile {
+        font-size: 13px;
+        padding-right: 4px;
+    }
+}
 
-    .text-normal {
+.text-normal {
+    @include tablet-large {
         text-align: start;
     }
+}
 
-    .first-part {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
+.first-part {
+    @include tablet-large {
+        @include flex-row($gap-xxs, center, center)
     }
+    @include tablet {
+        gap: 13px
+    }
+}
 
-    .sheme1-img {
+.sheme1-img {
+    @include tablet-large {
         width: 209px;
         height: 71px;
         object-fit: contain;
     }
+    @include tablet {
+        width: 160px;
+        height: 59px;
+    }
+    @include mobile {
+        width: 100px;
+        height: 39px;
+    }
+}
 
+@include tablet-large {
     .client { grid-row: 1/4; grid-column: 1/3; }
     .sim-card { grid-row: 5/6; grid-column: 1/3; }
     .operators { grid-row: 7/8; grid-column: 1/3; }
@@ -63,26 +99,43 @@
     .numbers-grid { grid-row: 9/12; grid-column: 3/4; }
     .IP { grid-row: 10/11; grid-column: 3/7; }
     .internet-block { grid-row: 11/12; grid-column: 3/7; }
+}
 
+@include tablet {
+    .client, .sim-card, .operators, .summary {
+        grid-column: 1/2;
+    }
+
+    .scheme1, .scheme2, .scheme3, .vectors, 
+    .sim-cards-group, .mbit-groups, .router-cards-group, 
+    .server-block, .IP, .internet-block {
+        grid-column: 2/7;
+    }
+
+    .numbers-grid {
+        grid-column: 2/3;
+    }
+}
+
+@include mobile {
+    .server-block, .IP, .internet-block {
+        grid-column: 3/7;
+    }
+}
+
+@include tablet-large {
     .scheme1, .sim-cards-group, .mbit-groups, .router-cards-group, .internet-block {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        @include flex-row;
     }
-    
+
     .scheme2, .server-block, .IP {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 13px;
+        @include flex-row(13px)
     }
-    
+
     .scheme3 {
-        display: flex;
-        flex-direction: row;
-        gap: 8px;
+        @include flex-row(8px)
     }
-    
+
     .vector-top, .vector-bottom {
         display: flex;
         justify-content: space-around;
@@ -98,51 +151,46 @@
         justify-content: space-between;
         margin-top: 20px;
     }
-    
+
     .numbers-grid {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        @include flex-column(0, center, center)
     }
-    
+
     .server-block {
         flex-direction: row-reverse;
         gap: 10px;
     }
-    
+
     .IP {
         justify-content: center;
     }
-    
+
     .internet-block {
         gap: 20px;
     }
 
     .vectors {
-        display: flex;
-        flex-direction: row;
-        gap: 6px;
+        @include flex-row(6px)
     }
 
     .group-border {
         border-right: 0;
         width: 7px;
-        border-bottom: 2px solid #00E4F0;
+        border-bottom: 2px solid $accent;
         height: 100%;
+
+        &::before {
+            width: 8px;
+            height: 2px;
+            top: 50%;
+            left: -9px;
+            background-color: $accent;
+        }
     }
-    
+
     .group-border-small {
         width: 7px;
         height: 100%;
-    }
-    
-    .group-border::before {
-        width: 8px;
-        height: 2px;
-        top: 50%;
-        left: -9px;
-        background-color: #00E4F0;
     }
 
     .group-item {
@@ -155,19 +203,22 @@
         height: 63px;
         object-fit: contain;
     }
+
+    .server-block {
+        flex-direction: row-reverse;
+        gap: 10px;
+    }
 }
+
+// изменить tablet
 
 @media (max-width: 768px) {
     .numbers {
-        font-size: 10px;
+        font-size: $text-sm;
     }
 
     .first-part {
         gap: 13px;
-    }
-
-    .text-wide {
-        font-size: 18px;
     }
 
     .schemeBlock {
@@ -190,10 +241,6 @@
     .sheme2-img {
         width: 60px;
         height: 47px;
-    }
-    .sheme1-img {
-        width: 160px;
-        height: 59px;
     }
 
     .vectors {
@@ -226,11 +273,6 @@
 }
 
 @media (max-width: 495px) {
-    .text-wide {
-        font-size: 13px;
-        padding-right: 4px;
-    }
-
     .router-cards-group, .sim-cards-group {
         padding: 0 1px;
     }
@@ -261,34 +303,4 @@
         width: 30px;
         height: 53px;
     }
-
-    .sheme1-img {
-        width: 100px;
-        height: 39px;
-    }
 }
-
-/* 
-.another-text {
-    white-space: nowrap;
-    margin-bottom: 14px;
-}
-
-.another-text-operators {
-    margin-bottom: 23px;
-}
-
-.sheme2-img {
-    width: 94px;
-    height: 73px;
-}
-
-.server {
-    width: 105px;
-    height: 114px;
-}
-
-.global-img {
-    width: 69px;
-    height: 69px;
-} */

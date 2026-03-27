@@ -5,3 +5,47 @@
     letter-spacing: $letter;
     color: $color;
 }
+
+@mixin tablet-large {
+    @media (max-width: 1285px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 495px) {
+        @content;
+    }
+}
+
+@mixin flex-row($gap: 0, $align: center, $justify: null) {
+    display: flex;
+    flex-direction: row;
+    align-items: $align;
+    @if $justify {
+        justify-content: $justify;
+    }
+    @if $gap != 0 {
+        gap: $gap;
+    }
+}
+
+@mixin flex-column($gap: 0, $align: null, $justify: null) {
+    display: flex;
+    flex-direction: column;
+    @if $justify {
+        justify-content: $justify;
+    }
+    @if $align {
+        align-items: $align;
+    }
+    @if $gap != 0 {
+        gap: $gap;
+    }
+}

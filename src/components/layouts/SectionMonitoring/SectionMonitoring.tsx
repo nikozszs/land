@@ -1,6 +1,6 @@
 import monitor from '../../../assets/monitor.svg'
 import { Button } from '../../ui/Button/Button'
-import './SectionMonitoring.css'
+import './SectionMonitoring.scss'
 
 export const SectionMonitoring = () => {
     return (
