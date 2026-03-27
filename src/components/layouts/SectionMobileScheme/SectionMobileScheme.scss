@@ -210,8 +210,6 @@
     }
 }
 
-// изменить tablet
-
 @media (max-width: 768px) {
     .numbers {
         font-size: $text-sm;
@@ -302,5 +300,9 @@
     .card {
         width: 30px;
         height: 53px;
+    }
+
+    .numbers {
+        font-size: 8px;
     }
 }

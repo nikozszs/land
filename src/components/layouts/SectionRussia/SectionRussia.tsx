@@ -1,6 +1,6 @@
 import clietns from '@assets/clietns.svg'
 import sqr from '@assets/sqr.svg'
-import './SectionRussia.css'
+import './SectionRussia.scss'
 import { cities } from '../../../data/cities'
 import { Map } from '../Map'
 

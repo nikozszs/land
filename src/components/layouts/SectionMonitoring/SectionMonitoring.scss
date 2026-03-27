@@ -1,5 +1,12 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
 .sectionMonitoring {
     margin-bottom: 73px;
+
+    @include tablet {
+        margin-bottom: 42px;
+    }
 }
 
 .block-monitoring {
@@ -8,83 +15,78 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 12px;
     margin: 20px 0 34px;
+
+    @include tablet {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: none;
+    }
 }
 
 .sectionMonitoring_monitor {
     grid-column: span 5;
     grid-row: 1;
+
+    @include tablet {
+        grid-column: 1;
+        grid-row: auto;
+    }
 }
 
 .sectionMonitoring_setting {
     grid-column: span 5;
     grid-row: 2;
+
+    @include tablet {
+        grid-column: 1;
+        grid-row: auto;
+    }
 }
 
 .block-setting {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex-column($gap-xxs, null, space-between);
     padding: 11px 100px 15px 21px;
     border-radius: 8px;
-    border: 1px solid #00E4F0;
+    border: 1px solid $accent;
     background: linear-gradient(
         240deg,
-        #00E4F0 5%,
+        $accent 5%,
         #000000 65%
     );
-    gap: 50px;
+
+    @include tablet {
+        gap: 76px;
+        padding: 15px 10px 10px 15px;
+    }
+
+    @media (max-width: 1024px) {
+        padding-right: 40px;
+    }
 }
 
 .sectionMonitoring_img {
     grid-column: span 7;
     grid-row: span 2;
-}
 
-.sectionMonitoring_text {
-    font-size: 18px;
-    line-height: 22.2px;
-    letter-spacing: 0;
-}
-
-.sectionMonitoring_text:not(:last-child) {
-    padding-bottom: 20px;
-}
-
-.button-container {
-    display: flex;
-    justify-content: center;
-}
-
-@media (max-width: 1024px) {
-    .block-setting {
-        padding-right: 40px;
-    }
-}
-
-@media (max-width: 768px) {
-    .sectionMonitoring {
-        margin-bottom: 42px;
-    }
-
-    .block-monitoring {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: none;
-    }
-
-    .block-setting {
-        gap: 76px;
-        padding: 15px 10px 10px 15px;
-    }
-
-    .sectionMonitoring_text {
-        font-size: 16px;
-    }
-
-    .sectionMonitoring_monitor,
-    .sectionMonitoring_setting,
-    .sectionMonitoring_img {
+    @include tablet {
         grid-column: 1;
         grid-row: auto;
     }
+}
+
+.sectionMonitoring_text {
+    font-size: $text-md;
+    line-height: 22.2px;
+    letter-spacing: 0;
+
+    @include tablet {
+        font-size: 16px;
+    }
+
+    &:not(:last-child) {
+        padding-bottom: 20px;
+    }
+}
+
+.button-container {
+    @include flex-row(0, center, center)
 }
