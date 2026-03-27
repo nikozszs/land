@@ -1,4 +1,4 @@
-import './SectionMobileScheme.css'
+import './SectionMobileScheme.scss'
 import shemeMobile1 from '@assets/shemeMobile1.svg'
 import sheme2 from '@assets/sheme2.svg'
 import server from '@assets/server.svg'

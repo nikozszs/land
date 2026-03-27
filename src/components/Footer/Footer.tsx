@@ -1,4 +1,4 @@
-import './Footer.css'
+import './Footer.scss'
 import logo from '../../assets/logo.svg'
 import footer from '../../assets/footer.svg'
 import mobile from '../../assets/mobile-logo-footer.svg'
