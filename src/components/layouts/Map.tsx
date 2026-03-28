@@ -1,5 +1,5 @@
 import mapRussia from '@public/mapRussia.svg?url'
-import './SectionRussia/SectionRussia.css'
+import './SectionRussia/SectionRussia.scss'
 import star from '@assets/star.svg'
 import { mobileStars, stars } from '../../data/stars'
 import { getPercentPosition } from '../../utils/function'
