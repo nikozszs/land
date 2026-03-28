@@ -10,7 +10,7 @@
 }
 
 .schemeBlock {
-    border: 1px solid #00E4F0;
+    border: 1px solid var(--color-primary);
     padding: 57px 25px 60px;
     height: auto;
     box-shadow: 0 0 7px 4px rgb(46, 236, 246);
@@ -20,7 +20,7 @@
 .first-part-scheme {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 70px;
+    gap: $gap-large;
     row-gap: 0px;
 }
 
@@ -28,61 +28,46 @@
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     gap: 10px;
-    margin-top: 10px;
     padding-left: 2px;
 }
 
 .numbers {
-    display: flex;
-    justify-content: center;
-    color: #00E4F0;
-    font-size: 15px;
-    letter-spacing: 0;
-    line-height: 22.2px;
+    @include flex-row(0, center, center);
+    @include text-style(null, 15px, 22.2px, 0, var(--color-primary));
 }
 
-.client {
+.client,
+.summary {
     grid-row: span 2 ;
 }
 
-.sim-card {
-    grid-row: span 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+.sim-card,
 .operators {
     grid-row: span 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.summary {
-    grid-row: span 2;
+    @include flex-column(0, center)
 }
 
 .text-scheme {
-    font-weight: 300;
-    letter-spacing: 0;
+    @include text-style(300, null, null, 0);
     text-align: center;
     margin-bottom: 18px;
 }
 
+.text-wide,
+.text-small {
+    text-transform: uppercase;
+}
+
 .text-wide {
     font-size: 15px;
-    text-transform: uppercase;
 }
 
 .text-normal {
-    font-size: 14px;
-    line-height: 19.2px;
+    @include text-style(null, 14px, 19.2px, null);
 }
 
 .text-small {
-    font-size: 10px;
-    text-transform: uppercase;
+    font-size: $text-sm;
 }
 
 .another-text {
@@ -95,11 +80,21 @@
 }
 
 .group-border {
-    border: 2px solid #00E4F0;
+    border: 2px solid var(--color-primary);
     border-bottom: 0;
     width: 340px;
     height: 11px;
     position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 15px;
+        top: -15px;
+        width: 2px;
+        left: 50%;
+        background-color: var(--color-primary);
+    }
 }
 
 .group-border-small {
@@ -107,22 +102,8 @@
     height: 11px;
 }
 
-.group-border::before {
-    content: '';
-    position: absolute;
-    height: 15px;
-    top: -15px;
-    width: 2px;
-    left: 50%;
-    background-color: #00E4F0;
-}
-
 .scheme1 {
-    display: flex;
-    gap: 11px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column(11px, center, center)
 }
 
 .sheme1-img {
@@ -131,10 +112,7 @@
 }
 
 .scheme2 {
-    display: flex;
-    gap: 12px;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-column(12px, null, center)
 }
 
 .vector {
@@ -163,28 +141,21 @@
 }
 
 .vectors {
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-column(30px, null, center)
 }
 
 .sim-cards-group {
-    display: flex;
-    gap: 15px;
-    flex-direction: column;
-    align-items: center;
+    @include flex-column(15px, center)
 }
 
 .card {
-    width: 45px;
+    object-fit: contain;
+    width: 55%;
 }
 
 .mbit-groups {
-    display: flex;
-    gap: 30px;
-    flex-direction: column;
     padding: 0 7px;
+    @include flex-column(30px, null, null)
 }
 
 .mbit-text {
@@ -192,9 +163,7 @@
 }
 
 .group-item {
-    display: flex;
-    gap: 2px;
-    flex-direction: column;
+    @include flex-column(2px, null, null)
 }
 
 .server {
@@ -213,14 +182,13 @@
 
 .mobile-scheme {
     display: none;
+    @include tablet-large {
+        display: block;
+    }
 }
 
 @media (max-width: 1285px) {
     .desktop-scheme {
         display: none;
-    }
-
-    .mobile-scheme {
-        display: block;
     }
 }

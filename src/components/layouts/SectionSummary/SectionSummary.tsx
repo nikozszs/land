@@ -1,4 +1,4 @@
-import './SectionSummary.css'
+import './SectionSummary.scss'
 import train from '@assets/train.svg'
 import electroTrain from '@/assets/electroTrain.svg'
 
