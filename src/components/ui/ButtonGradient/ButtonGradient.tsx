@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom';
-import './ButtonGradient.css'
+import './ButtonGradient.scss'
 import { HashLink } from 'react-router-hash-link';
 interface ButtonGradientProps {
     text: string;
