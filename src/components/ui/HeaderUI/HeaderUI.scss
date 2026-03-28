@@ -1,0 +1,117 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+.header {
+    margin-bottom: 37px;
+    z-index: 10;
+
+    @media (max-width: 770px) {
+        margin-bottom: 31px;
+    }
+}
+
+.header__nav {
+    @include flex-row(115px, flex-start, space-between);
+
+    @media (max-width: 770px) {
+        position: relative;
+        @include flex-column(0, null, null)
+    }
+
+    @media (max-width: 1024px) {
+        gap: 20px;
+    }
+}
+
+.header__nav-logo {
+    @include flex-row(10px, flex-start);
+    @media (max-width: 1024px) {
+        @include flex-column(0, null, null)
+    }
+    @media (max-width: 770px) {
+        width: 100%;
+        justify-content: space-between;
+        gap: 0;
+        flex-wrap: wrap;
+    }
+}
+
+.header__nav-links {
+    padding-top: 27px;
+    text-transform: uppercase;
+    @include flex-row(35px, null, null);
+    @media (max-width: 1024px) {
+        gap: 20px;
+    }
+    @media (max-width: 770px) {
+        display: none;
+    }
+}
+
+.header-link {
+    color: var(--color-white);
+    text-decoration: none;
+    position: relative;
+
+    &.active::before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        background-color: var(--color-primary);
+        position: absolute;
+        top: -30%;
+        right: 50%;
+    }
+}
+
+.other-color {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.tel {
+    padding-top: 27px;
+    white-space: nowrap;
+    @media (max-width: 1024px) {
+        padding-top: 10px;
+    }
+    @media (max-width: 770px) {
+        padding-top: 10px;
+        font-size: 14px;
+    }
+}
+
+.burger-menu {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    @include flex-column(12px, null, null);
+    @media (max-width: 770px) {
+        padding: 5px;
+        margin-left: auto;
+        margin-top: -40px;
+        padding-bottom: 20px;
+    }
+}
+
+.burger-line {
+    width: 28px;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: 0.3s;
+    border-radius: 2px;
+
+    &.active {
+        &:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        &:nth-child(2) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
+    }
+}
+
+.header_logo {
+    width: 185px;
+    height: 42px;
+}

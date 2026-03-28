@@ -1,5 +1,5 @@
 import logo from '../../../assets/logo.svg'
-import './HeaderUI.css'
+import './HeaderUI.scss'
 import { Link, NavLink } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
 
