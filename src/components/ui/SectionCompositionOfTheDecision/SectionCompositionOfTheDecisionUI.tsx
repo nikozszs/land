@@ -1,6 +1,6 @@
 import { CompositionBlock, type CardsBlock } from '../CompositionBlock';
 import { Navigation } from '../Navigation/Navigation';
-import './SectionCompositionOfTheDecision.css'
+import './SectionCompositionOfTheDecision.scss'
 
 interface SectionCompositionUIProps {
     cardsBlocks: CardsBlock[];

@@ -2,7 +2,7 @@ import arrowLeft from '@/assets/arrowLeft.svg'
 import arrowRight from '@/assets/arrowRight.svg'
 import navigation4 from '@/assets/navigation4.svg'
 import navigation3 from '@/assets/navigation3.svg'
-import './Navigation.css'
+import './Navigation.scss'
 import { useState } from 'react'
 
 interface NavigationProps {
