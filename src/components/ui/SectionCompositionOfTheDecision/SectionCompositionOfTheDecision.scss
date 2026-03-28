@@ -1,3 +1,6 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
 .section-compositionOfTheDecision {
     margin-bottom: 73px;
 }
@@ -10,17 +13,19 @@
 }
 
 .sectionComposition-block-setting {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     background: linear-gradient(
         70deg,
-        #00E4F0 1%,
-        #000000 39%
+        var(--color-primary) 1%,
+        var(--color-black) 39%
     );
     padding: 20px 24px;
-    border: 1px solid #00E4F0;
+    border: 1px solid var(--color-primary);
     border-radius: 8px;
+    @include flex-column(0, null, space-between);
+    @media (max-width: 822px) {
+        padding: 18px 15px 15px;
+        gap: 10px;
+    }
 }
 
 .first-grid {
@@ -39,9 +44,11 @@
 
 .sectionComposition-title {
     padding: 9px 0;
-    line-height: 32px;
-    letter-spacing: 0.09em;
     overflow-wrap: break-word;
+    @include text-style(300, 20px, 32px, 0.09em);
+    @media(max-width: 822px) {
+        @include text-style(300, 20px, 25px, 0.06em);
+    }
 }
 
 .multirouter-img {
@@ -50,19 +57,13 @@
 }
 
 .block-numeration {
-    display: flex;
-    flex-direction: row;
-    gap: 6px;
-    align-items: center;
-    font-size: 11px;
     text-transform: uppercase;
-    font-weight: 400;
-    line-height: 22.2px;
-    letter-spacing: 0.05em;
+    @include flex-row(6px, center);
+    @include text-style(400, 11px, 22.2px, 0.05em);
 }
 
 .numeration {
-    border: 1px solid #fff;
+    border: 1px solid var(--color-white);
     border-radius: 50px;
     background-color: transparent;
     width: 30px;
@@ -78,8 +79,11 @@
 }
 
 .sectionComposition-h4 {
-    color: #00E4F0;
+    color: var(--color-primary);
     line-height: 27px;
+    @media (max-width: 822px) {
+        @include text-style(400, 14px, 20px, 0.05em);
+    }
 }
 
 .sectionComposition-link {
@@ -87,40 +91,20 @@
 }
 
 .sectionComposition-flex {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    gap: 50px;
+    @include flex-column(50px, null, space-between)
 }
 
 .mobile-verssion {
     display: none;
-}
-
-@media (max-width: 822px) {
-    .desktop-version {
-        display: none;
-    }
-
-    .mobile-verssion {
+    @media(max-width: 822px) {
         display: block;
         margin-top: 30px;
         min-height: 0;
     }
+}
 
-    .sectionComposition-h4 {
-        font-size: 14px;
-        line-height: 20px;
-        letter-spacing: 0.05em;
-    }
-
-    .sectionComposition-block-setting {
-        padding: 18px 15px 15px;
-        gap: 10px;
-    }
-
-    .sectionComposition-title {
-        line-height: 25px;
-        letter-spacing: 0.06em;
+.desktop-version {
+    @media (max-width: 822px) {
+        display: none;
     }
 }
