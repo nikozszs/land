@@ -1,5 +1,5 @@
 import { HashLink } from 'react-router-hash-link';
-import './Button.css'
+import './Button.scss'
 import { useLocation } from 'react-router-dom';
 
 interface ButtonProps {

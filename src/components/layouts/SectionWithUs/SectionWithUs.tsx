@@ -1,4 +1,4 @@
-import './SectionWithUs.css'
+import './SectionWithUs.scss'
 import scroll1 from '@/assets/scroll1.svg'
 import scroll2 from '@/assets/scroll2.svg'
 import scroll3 from '@/assets/scroll3.svg'
