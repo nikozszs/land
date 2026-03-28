@@ -1,4 +1,4 @@
-import './SectionTechnology.css'
+import './SectionTechnology.scss'
 import technology from '@assets/technology.svg'
 import { Button } from '../../ui/Button/Button'
 

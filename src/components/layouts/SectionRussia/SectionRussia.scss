@@ -10,7 +10,7 @@
 }
 
 .block-map {
-    border: 1px solid #FF4C00;
+    border: 1px solid var(--color-border);
     box-shadow: 0 0 7px 4px rgba(255, 76, 0, 0.6);
     border-radius: 8px;
     position: relative;
