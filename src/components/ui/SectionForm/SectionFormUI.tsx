@@ -1,6 +1,6 @@
 import { type ChangeEvent, type FormEvent } from 'react'
 import { ButtonGradient } from '../ButtonGradient/ButtonGradient'
-import './SectionForm.css'
+import './SectionForm.scss'
 import type { FormErrors,FormData } from '../../../validation/validationForm'
 
 interface SectionFormUIProps {
