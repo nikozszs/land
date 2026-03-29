@@ -1,0 +1,190 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+.section_promo {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 12px;
+    margin-bottom: 70px;
+    position: relative;
+    z-index: 1;
+    align-items: stretch;
+    @media (max-width: 1000px) {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 10px;
+        column-gap: 0;
+    }
+    @include tablet {
+        margin-bottom: 43px;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        background: rgba(255, 255, 255, 0.5) url('@assets/tel.svg') no-repeat center / 23px 23px;
+        z-index: 2;
+        position: absolute;
+        right: 0px;
+        bottom: -40px;
+        width: 52px;
+        height: 52px;
+        border: 1px solid var(--color-white);
+        border-radius: 50%;
+        @media (max-width: 1000px) {
+            display: none;
+        }
+    }
+}
+
+.block-promo {
+    padding: 15px 25px 7px 21px;
+    border-radius: 8px;
+    @include tablet {
+        padding: 11px 15px 20px;
+    }
+}
+
+.block-promo__under {
+    padding: 20px 52px 16px 21px;
+    @include flex-column(0, null, space-between)
+} 
+
+.block-promo__under-img {
+    width: 64px;
+    height: 60px;
+    border-radius: 0;
+    object-fit: contain;
+    @include tablet {
+        max-width: 82px;
+        max-height: 60px;
+    }
+}
+
+.promo-list {
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+.promo-list__item {
+    @include text-style(100, 18px, 22.2px, 0.01em);
+    @include tablet {
+        @include text-style(null, 18px, 22px, 0.01em)
+    }
+}
+
+.promo-text {
+    margin: 20px 0;
+    @include text-style(400, 26px, null, 0.06em);
+    @include tablet {
+        @include text-style(null, 18px, 25px, 0.06em)
+    }
+}
+
+.promo1 {
+    grid-column: span 7;
+    background: linear-gradient(
+        240deg,
+        var(--color-border) 5%,
+        var(--color-black) 65%
+    );
+    border: 1px solid var(--color-border); 
+    @media (max-width: 1000px) {
+        grid-column: span 2;
+        order: 2;
+    }
+}
+
+.promo2 {
+    grid-column: span 5;
+    @media (max-width: 1000px) {
+        grid-column: span 2;
+        order: 1;
+    }
+}
+
+.title_promo,
+.promo-text {
+    text-transform: uppercase;
+}
+
+.title_promo {
+    @include text-style(300, 20px, 100%, 0.04em);
+    @include tablet {
+        font-size: 19px;
+    }
+}
+
+.text-under {
+    @include text-style(null, 12px, 14.2px, -0.01em, #B0B0B0)
+}
+
+.desktop-promo-cards {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+
+    .promo3 {
+        background: linear-gradient(
+        240deg,
+        var(--color-primary) 5%,
+        var(--color-black) 65%
+    );
+        border: 1px solid var(--color-primary); 
+        min-height: 160px;
+    }
+    @media (max-width: 1000px) {
+        display: none;
+    }
+}
+
+.mobile-promo-cards {
+    display: none;
+    @media (max-width: 1000px) {
+        display: block;
+        grid-column: span 1;
+        order: 3;
+    }
+}
+
+
+
+.promo3-scroll-container {
+    position: relative;
+    @media (max-width: 1000px) {
+        grid-column: span 1;
+    }
+}
+
+.promo3-wrapper { 
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    @include flex-row(12px, null, null);
+    @media (max-width: 1000px) {
+        overflow-x: hidden;
+    }
+}
+
+.promo-navigation-container {
+    margin-top: 15px;
+}
+
+@media (max-width: 1000px) {
+    .mobile-promo-cards .promo3 {
+        background: linear-gradient(
+            240deg,
+            var(--color-primary) 5%,
+            var(--color-black) 65%
+        );
+        border: 1px solid var(--color-primary); 
+        min-height: 200px;
+        width: 100%;
+    }
+}
+
+@include tablet {
+    .mobile-promo-cards .promo3.block-promo__under {
+        padding: 15px 33px 14px 15px;
+    }
+}

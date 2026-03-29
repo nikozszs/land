@@ -223,7 +223,7 @@
             left: 0;
             top: 2px;
             background-color: var(--color-primary);
-            color: var(--color-black);
+            color: var(--color-black) !important;
             width: 15px;
             height: 15px;
             @include flex-row(0, center, center);

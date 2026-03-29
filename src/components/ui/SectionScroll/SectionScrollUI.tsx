@@ -1,5 +1,5 @@
 import { Navigation } from '../Navigation/Navigation'
-import './SectionScroll.css'
+import './SectionScroll.scss'
 
 interface ScrollBlocks {
     id: number

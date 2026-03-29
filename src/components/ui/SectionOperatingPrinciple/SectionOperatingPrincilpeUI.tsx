@@ -1,4 +1,4 @@
-import './SectionOperatingPrincilpe.css'
+import './SectionOperatingPrincilpe.scss'
 import { Navigation } from '../Navigation/Navigation';
 
 interface CardsBlock {

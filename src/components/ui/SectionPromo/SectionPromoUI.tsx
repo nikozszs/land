@@ -1,7 +1,7 @@
 import promo from '@assets/promo.svg'
 import { Button } from '../Button/Button'
 import { Navigation } from '../Navigation/Navigation'
-import './SectionPromo.css'
+import './SectionPromo.scss'
 
 interface PromoBlock {
     id: number;

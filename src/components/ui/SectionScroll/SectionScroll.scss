@@ -1,0 +1,130 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+.sectionScroll {
+    overflow: hidden;
+    margin-bottom: 72px;
+    @include tablet {
+        margin-bottom: 37px;
+    }
+}
+
+.link-title {
+    text-transform: lowercase;
+    @include text-style(400, 39px, null, null);
+    @include tablet {
+        font-size: 29px;
+    }
+}
+
+.scroll-container {
+    overflow-x: auto;
+    padding-top: 27px;
+    padding-right: 50%;
+    margin-right: -50%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    @include flex-row(12px, null, null)
+}
+
+.desktop-scroll-container {
+    display: block;
+    @include tablet {
+        display: none;
+    }
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.block {
+    background: linear-gradient(
+        240deg,
+        var(--color-primary) 5%,
+        var(--color-black) 65%
+    );
+    border: 1px solid var(--color-primary); 
+    border-radius: 8px;
+    padding: 24px 19px 49px 24px;
+    max-width: 563px;
+    min-width: 563px;
+    flex-shrink: 0;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 10px;
+        right: 15px;
+        width: 16px;
+        height: 18px;
+        background: center no-repeat contain url('../../assets/arrow.svg')
+    }
+
+    @include tablet {
+        padding: 21px 21px 26px 15px;
+        max-width: 100%;
+        min-width: 0;
+    }
+}
+
+.sectionScroll__text-container {
+    padding-bottom: 20px;
+    @include flex-row(23px, null);
+    @include tablet {
+        padding-bottom: 0px;
+        @include flex-row(0, null, space-between)
+    }
+}
+
+.block_text {
+    text-align: left;
+    @include text-style(300, 12px, 19px, 0.05em);
+    @include tablet {
+        @include text-style(null, null, 16px, 0)
+    }
+}
+
+.block_text-other {
+    color: var(--color-primary);
+}
+
+.mobile-slides-container {
+    display: none;
+    @include tablet {
+        display: block;
+    }
+}
+
+.mobile-slides-wrapper {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.mobile-slide {
+    width: 100%;
+    @include tablet {
+        flex-direction: column;
+    }
+}
+
+.mobile-navigation-container {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .current-slide {
+        @include text-style(200, 17px, 22px, 0)
+    }
+}
+
+@media (min-width: 787px) {
+    .mobile-slides-container {
+        display: none;
+    }
+    
+    .desktop-scroll-container {
+        display: block;
+    }
+}

@@ -1,6 +1,6 @@
 import promoTech from '@assets/promoTech.svg'
 import { Button } from '../Button/Button'
-import './SectionPromoTech.css'
+import './SectionPromoTech.scss'
 
 export const SectionPromoTech = () => {
     return (
