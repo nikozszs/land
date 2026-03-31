@@ -103,7 +103,7 @@
 }
 
 .mobile-slide {
-    width: 100%;
+    max-width: 100%;
     @include tablet {
         flex-direction: column;
     }

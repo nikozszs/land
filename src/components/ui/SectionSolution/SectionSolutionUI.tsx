@@ -1,4 +1,4 @@
-import './SectionSolution.css'
+import './SectionSolution.scss'
 import solution from '@assets/solution.svg'
 import { ButtonGradient } from '../ButtonGradient/ButtonGradient'
 import { Navigation } from '../Navigation/Navigation'
