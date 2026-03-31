@@ -1,4 +1,4 @@
-import './SectionTechSupport.css'
+import './SectionTechSupport.scss'
 import tech1 from '@assets/tech1.svg'
 import tech2 from '@assets/tech2.svg'
 

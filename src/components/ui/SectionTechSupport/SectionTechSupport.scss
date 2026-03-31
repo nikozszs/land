@@ -1,0 +1,62 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+.sectionTechSupport {
+    margin-bottom: 72px;
+    @include tablet {
+        margin-bottom: 37px;
+    }
+}
+
+.container-blocks-red {
+    margin-top: 30px;
+    @include flex-row(12px, null, null);
+    @include tablet {
+        margin-top: 20px;
+        @include flex-column(10px, null, null)
+    }
+}
+
+.sectionTech-block-red {
+    display: block;
+    background: linear-gradient(
+        220deg,
+        var(--color-black) 40%,
+        var(--color-border) 120%
+    );
+    border: 1px solid var(--color-border); 
+    padding: 14px 15px 20px 17px;
+    border-radius: 8px;
+    width: 100%;
+    @include tablet {
+        padding: 15px;
+        box-sizing: border-box;
+        background: linear-gradient(
+            240deg, 
+            #FF4C00 1%,
+            #000000 50%);
+    }
+
+    ul {
+        padding-left: 17px;
+        @include tablet {
+            padding-left: 23px;
+        }
+    }
+}
+
+.sectionTech-img {
+    width: auto; 
+    max-height: 60px;
+    object-fit: contain;
+}
+
+.sectionTech-block-red-flex {
+    @include flex-row(0, null, space-between);
+    @include tablet {
+        flex-direction: column-reverse;
+        align-items: start;
+        margin-top: 21px;
+        gap: 15px;
+    }
+}
