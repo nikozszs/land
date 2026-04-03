@@ -2,15 +2,15 @@
 @import '../../../styles/mixins.scss';
 
 .button-gradient {
-    text-transform: uppercase;
-    background: linear-gradient(
-        210deg,
-        #FF4C00 0%,
-        #B38BCE 60%,
-        #00E4F0 100%
-    );
-    border: 1px solid transparent;
-    padding: 12px 90px;
+    @include block-setting(
+        $color1: #FF4C00, $stop1: 0%,
+        $color2: #B38BCE, $stop2: 60%,
+        $color3: #00E4F0, $stop3: 100%,
+        $angle: 210deg,
+        $padding: 12px 90px,
+        $border-color: transparent,
+        $border-radius: 50px
+        );
 
     &:hover {
         box-shadow: 

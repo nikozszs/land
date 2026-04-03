@@ -122,17 +122,14 @@
     transform: rotate(var(--rotate, 0deg));
 }
 
-.vector-left .vector:not(:first-child):not(:last-child) {
+.vector-left .vector:not(:first-child):not(:last-child),
+.vector-right .vector:first-child, 
+.vector-right .vector:last-child {
     padding-left: 10px;
 }
 
 .vector-right .vector:not(:first-child):not(:last-child) {
     padding-right: 10px;
-}
-
-.vector-right .vector:first-child, 
-.vector-right .vector:last-child {
-    padding-left: 10px;
 }
 
 .sheme2-img {

@@ -19,14 +19,15 @@
 }
 
 .block-title {
-    background: linear-gradient(
-        40deg,
-        #FF4C00 0%,
-        #B38BCE 60%,
-        #00E4F0 100%
+    @include block-setting(
+        $color1: #FF4C00, $stop1: 0%,
+        $color2: #B38BCE, $stop2: 60%,
+        $color3: #00E4F0, $stop3: 100%,
+        $angle: 40deg,
+        $padding: 10px 140px 122px 21px,
+        $border-color: var(--color-primary),
+        $border-radius: 8px
     );
-    padding: 10px 140px 122px 21px;
-    border-radius: 8px;
     @media (max-width: 1024px) and (min-width: 817px) {
         padding: 13px 50px 70px 15px;
     }
@@ -38,8 +39,7 @@
 .text_form {
     @include text-style(500, 32px, 40px, 0.04em, var(--color-black));
     @media (max-width: 816px) {
-        font-size: 20px;
-        line-height: 25px;
+        @include text-style(null, 20px, 25px, null, var(--color-black));
     }
 }
 
@@ -49,14 +49,14 @@
 }
 
 .form__block {
-    padding: 32px 42px 32px 40px;
-    border-radius: 8px;
-    background: linear-gradient(
-        240deg,
-        var(--color-primary) 1%,
-        var(--color-black) 56%
+    @include block-setting(
+        $color1: var(--color-primary), $stop1: 1%,
+        $color2: var(--color-black), $stop2: 56%,
+        $angle: 240deg,
+        $padding: 32px 42px 32px 40px,
+        $border-color: var(--color-primary),
+        $border-radius: 8px
     );
-    border: 1px solid var(--color-primary);
     @media (max-width: 816px) {
         padding: 14px 15px 25px;
     }

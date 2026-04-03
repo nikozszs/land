@@ -8,19 +8,16 @@
 }
 
 .footer_address,
-.footer_info {
+.footer_info,
+.footer-container_adress,
+.footer-container_info,
+.footer_links {
     display: flex;
     flex-direction: column;
 }
 
 .footer_address { gap: $gap-large }
 .footer_info { gap: $gap-medium }
-
-.footer-container_adress,
-.footer-container_info {
-    display: flex;
-    flex-direction: column;
-}
 
 .footer-container_adress { gap: $gap-xxxs; }
 .footer-container_info { gap: $gap-xs; }
@@ -32,11 +29,7 @@
 
 .footer_text,
 .footer-link {
-    font-weight: 100;
-    font-size: 12px;
-    line-height: 19.6px;
-    letter-spacing: 0.01em;
-    color: $white-light;
+    @include text-style(100, 12px, 19.6px, 0.01em, $white-dark)
 }
 
 .footer_logo-text {
@@ -50,22 +43,16 @@
 }
 
 .footer_text-info {
-    line-height: 140%;
-    letter-spacing: 0.01em;
+    @include text-style(null, null, 140%, 0.01em, $white-dark)
 }
 
 .footer_links {
-    display: flex;
-    flex-direction: column;
     gap: $gap-small;
 
     a {
         display: inline-block;
-        font-weight: 200;
-        color: $white-light;
         text-decoration: underline;
-        line-height: 17.6px;
-        letter-spacing: -0.04em;
+        @include text-style(200, null, 17.6px, -0.04em, $white-dark)
     }
 }
 
@@ -115,9 +102,7 @@
     }
 
     .mobile-footer_links a {
-        line-height: 16px;
-        letter-spacing: 0.01em;
-        font-size: 11px;
+        @include text-style(null, 11px, 16px, 0.01em, $white-dark)
     }
 
     .footer_links {

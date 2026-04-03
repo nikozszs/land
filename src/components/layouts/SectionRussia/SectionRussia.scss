@@ -3,7 +3,6 @@
 
 .sectionRussia {
     margin-bottom: 79px;
-
     @include tablet {
         margin-bottom: 41px;
     }
@@ -14,12 +13,10 @@
     box-shadow: 0 0 7px 4px rgba(255, 76, 0, 0.6);
     border-radius: 8px;
     position: relative;
-
     @include tablet {
         width: 100%;
         height: auto;
     }
-
     @media (min-width: 1024px) {
         width: 100%;
         height: auto;
@@ -28,15 +25,10 @@
     i {
         position: absolute;
         z-index: 2;
-        font-weight: 600;
-        font-size: 16px;
-        letter-spacing: 0;
-        line-height: 22px;
-        color: var(--color-black);
+        @include text-style(600, 16px, 22px, 0, var(--color-black));
         background-color: var(--color-primary);
         font-style: normal;
         padding: 2px 4px;
-
         @media (min-width: 1024px) {
             font-size: calc(12px + 0.1vw);
             padding: 1px 3px;
@@ -53,7 +45,6 @@
     height: 792px;
     margin-top: 20px;
     max-width: 100%;
-
     @include tablet {
         display: none;
     }
@@ -118,7 +109,6 @@
 .map-star {
     width: 160px;
     height: 160px;
-
     @include tablet {
         width: 70px;
         height: 70px;
@@ -150,6 +140,7 @@
     .mobile-block-map {
         display: block;
         aspect-ratio: 340 / 250;
+        margin-top: 20px;
 
         i {
             width: 15px;

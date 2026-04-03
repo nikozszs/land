@@ -4,7 +4,6 @@
 .header {
     margin-bottom: 37px;
     z-index: 10;
-
     @media (max-width: 770px) {
         margin-bottom: 31px;
     }
@@ -12,12 +11,10 @@
 
 .header__nav {
     @include flex-row(115px, flex-start, space-between);
-
     @media (max-width: 770px) {
         position: relative;
         @include flex-column(0, null, null)
     }
-
     @media (max-width: 1024px) {
         gap: 20px;
     }

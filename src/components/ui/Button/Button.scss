@@ -22,11 +22,7 @@
 
 .buttonSecondary-link {
     text-decoration: none;
-    color: var(--color-black);
-    font-weight: 500;
-    line-height: 140%;
-    letter-spacing: 0.07em;
-    font-size: 14px;
+    @include text-style(500, 14px, 140%, 0.07em, var(--color-black));
 
     &:hover {
         color: var(--color-black);

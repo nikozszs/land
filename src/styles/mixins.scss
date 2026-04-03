@@ -49,3 +49,34 @@
         gap: $gap;
     }
 }
+
+@mixin block-setting(
+    $color1,
+    $color2,
+    $color3: null,
+    $stop1,
+    $stop2,
+    $stop3: null,
+    $angle,
+    $padding,
+    $border-color: var(--color-primary),
+    $border-radius
+) {
+    padding: $padding;
+    border-radius: $border-radius;
+    border: 1px solid $border-color;
+    @if $color3 != null {
+        background: linear-gradient(
+            $angle,
+            $color1 $stop1,
+            $color2 $stop2,
+            $color3 $stop3
+        );
+    } @else {
+        background: linear-gradient(
+            $angle,
+            $color1 $stop1,
+            $color2 $stop2
+        );
+    }
+}
