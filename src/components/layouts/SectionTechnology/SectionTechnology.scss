@@ -48,7 +48,8 @@
         $color2: var(--color-black), $stop2: 50%,
         $angle: 240deg,
         $padding: 14px 26px 20px 21px,
-        $border-color: var(--color-border)
+        $border-color: var(--color-border),
+        $border-radius: 8px,
         );
     @media (max-width: 970px) {
         grid-column: span 1;

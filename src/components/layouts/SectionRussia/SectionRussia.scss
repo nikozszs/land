@@ -94,7 +94,7 @@
     }
 
     @include tablet {
-        padding: 31px 0px 0px;
+        padding: 31px 0px 0px 20px;
         width: 90%;
         position: relative;
         z-index: 0;
@@ -109,6 +109,11 @@
 .map-star {
     width: 160px;
     height: 160px;
+    @media (max-width: 1024px) and (min-width: 768px) {
+        width: 130px;
+        height: 130px;
+
+    }
     @include tablet {
         width: 70px;
         height: 70px;
@@ -177,8 +182,8 @@
                 &:nth-of-type(4) { top: 72%; left: 3%; }
                 &:nth-of-type(5) { top: 72%; left: 22%; }
                 &:nth-of-type(6) { top: 67%; left: 28%; }
-                &:nth-of-type(7) { bottom: 11%; left: 39%; }
-                &:nth-of-type(8) { bottom: 9%; left: 87%; }
+                &:nth-of-type(7) { bottom: 19%; left: 39%; }
+                &:nth-of-type(8) { bottom: 16%; left: 83%; }
             }
         }
     }
